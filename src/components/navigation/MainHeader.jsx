@@ -8,6 +8,7 @@ export class MainHeader extends React.Component {
         <Link to='/'>Home</Link>
         <Link to='/register'>Register</Link>
         <Link to='/my-profile'>My Profile</Link>
+        <Link to='/Payment/'>Payment</Link>
       </header>
     );
   }
