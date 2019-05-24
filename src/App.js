@@ -4,8 +4,9 @@ import { HashRouter, Route } from "react-router-dom";
 import { MainHeader } from './components/navigation/MainHeader';
 import { HomePage } from './pages/Home/HomePage';
 import { RegisterPage } from './pages/Register/RegisterPage';
-import { MyProfilePage } from './pages/MyProfile/MyProfilePage';
+import { ProfileSetupPage } from './pages/ProfileSetup/ProfileSetupPage';
 import { PaymentPage } from './pages/Payment/PaymentPage';
+import { signUpPage } from './pages/SignUp/signUpPage';
 
 import { CompleteProfilePage } from "./pages/Register/CompleteProfile/CompleteProfilePage"
 
@@ -16,11 +17,13 @@ function App() {
 
       <div className='page-container'>
       
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/Home" component={HomePage} />
         <Route path="/register" component={RegisterPage} />
-        <Route path="/my-profile" component={MyProfilePage} />
+        <Route path="/ProfileSetup" component={ProfileSetupPage} />
         <Route path="/CompleteProfile" component={CompleteProfilePage} />
         <Route path="/payment" component={PaymentPage} />
+        <Route path="/SignUp" component={signUpPage} />
+       
        
       </div>
     </HashRouter>
