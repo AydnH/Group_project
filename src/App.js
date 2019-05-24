@@ -5,6 +5,7 @@ import { MainHeader } from './components/navigation/MainHeader';
 import { HomePage } from './pages/Home/HomePage';
 import { RegisterPage } from './pages/Register/RegisterPage';
 import { MyProfilePage } from './pages/MyProfile/MyProfilePage';
+import { PaymentPage } from './pages/Payment/PaymentPage';
 
 import { CompleteProfilePage } from "./pages/Register/CompleteProfile/CompleteProfilePage"
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/register" component={RegisterPage} />
         <Route path="/my-profile" component={MyProfilePage} />
         <Route path="/CompleteProfile" component={CompleteProfilePage} />
+        <Route path="/payment" component={PaymentPage} />
        
       </div>
     </HashRouter>

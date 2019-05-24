@@ -1,11 +1,38 @@
 body {
   margin: 0;
   padding: 0;
-  background: #696969;
+    text-align: left;
 }
 
 div.page-container {
   padding: 20px;
+}
+
+.lineThrough
+{
+	text-decoration: line-through;
+	float: right;
+}
+
+.green
+{
+	color: green;
+}
+
+hr 
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: auto;
+    padding: 0;
+}
+
+h1
+{
+	text-align: center;
+	vertical-align: text-top;
 }
 
 @import "./components/navigation/MainHeader.scss";
