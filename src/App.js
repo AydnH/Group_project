@@ -9,7 +9,7 @@ import { PaymentPage } from './pages/Payment/PaymentPage';
 import { signUpPage } from './pages/SignUp/signUpPage';
 
 import { CompleteProfilePage } from "./pages/Register/CompleteProfile/CompleteProfilePage"
-import { PaymentPage } from "./pages/Payment/PaymentPage"
+
 
 function App() {
   return (

@@ -5,18 +5,16 @@ import Logo from './images/logo.png';
 export class PaymentPage extends React.Component {
   render() {
     return (
-<<<<<<< HEAD
-		<div id='PaymentPage'>	
+
+	<div id='PaymentPage'>	
 		<div className='image-container'>	
 		<img src={require('./images/logo.png')} alt='Logo'/>
 		</div>		
-=======
-		<div id='PaymentPage'>
-		<picture>
-	
-		<img src={ '../../images/logo.png' } />
-		</picture>
->>>>>>> fe9b49731a3ca0b08e5b70770471c5b53b0389c8
+
+		<div className='image-container'>	
+		<img src={require('./images/logo.png')} alt='Logo'/>
+		</div>	
+
 		<h1>Premium Account</h1>
 		<hr/>
 		<p>Your first Month is FREE</p>
@@ -34,8 +32,8 @@ export class PaymentPage extends React.Component {
 			<br/>
 
 			<button>Continue</button>
-			</div>
 		</div>
+	</div>
     );
   }
 }
