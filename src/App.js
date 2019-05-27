@@ -7,6 +7,9 @@ import { RegisterPage } from './pages/Register/RegisterPage';
 import { ProfileSetupPage } from './pages/ProfileSetup/ProfileSetupPage';
 import { PaymentPage } from './pages/Payment/PaymentPage';
 import { signUpPage } from './pages/SignUp/signUpPage';
+import { ProfileImagePage } from './pages/ProfileImage/ProfileImagePage';
+import { LocationPage } from './pages/Location/LocationPage';
+import { FinalPage } from './pages/Final/FinalPage';
 
 import { CompleteProfilePage } from "./pages/Register/CompleteProfile/CompleteProfilePage"
 
@@ -27,6 +30,10 @@ function App() {
 
         <Route path="/payment" component={PaymentPage} />
         <Route path="/SignUp" component={signUpPage} />
+		
+		<Route path="/Location" component={LocationPage} />
+		<Route path="/ProfileImage" component={ProfileImagePage} />
+        <Route path="/Final" component={FinalPage} />
        
 
        
