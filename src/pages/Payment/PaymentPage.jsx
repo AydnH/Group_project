@@ -6,15 +6,12 @@ export class PaymentPage extends React.Component {
   render() {
     return (
 
-	<div id='PaymentPage'>	
+	<div id='PaymentPage'>		
 		<div className='image-container'>	
-		<img src={require('./images/logo.png')} alt='Logo'/>
-		</div>		
-
-		<div className='image-container'>	
-		<img src={require('./images/logo.png')} alt='Logo'/>
+		<img style={{width:70, height: 70}} src={require('./images/logo.png')} alt='Logo'/>
 		</div>	
-
+		<br/>
+		<br/>
 		<h1>Premium Account</h1>
 		<hr/>
 		<p>Your first Month is FREE</p>

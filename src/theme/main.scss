@@ -2,38 +2,48 @@ body {
   margin: 0;
   padding: 0;
     text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #5A5560;
 }
 
 div.page-container {
   padding: 20px;
 }
 
-.lineThrough
-{
-	text-decoration: line-through;
-	float: right;
-}
 
-.green
-{
-	color: green;
-}
 
-hr 
-{
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: auto;
-    padding: 0;
-}
 
 h1
 {
 	text-align: center;
 	vertical-align: text-top;
+  font-family: 'Montserrat', sans-serif;
+  color: #E9E585;
+  size:10px;
 }
+img{
+ 
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+}
+
+@media (max-width: 1000px){
+
+  img{
+ 
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+}
+
+}
+
+
 
 @import "./components/navigation/MainHeader.scss";
 @import "./components/forms/form-control.scss";

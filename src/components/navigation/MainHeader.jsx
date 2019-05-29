@@ -5,8 +5,8 @@ export class MainHeader extends React.Component {
   render() {
     return (
       <header id='MainHeader'>
-        <Link to='/'>Home</Link>
-        <Link to='/register'>Register</Link>
+        <Link to='/HomePage'>Home</Link>
+        <Link to='/SignUp'>Sign Up</Link>
         <Link to='/my-profile'>My Profile</Link>
 
         <Link to='/Final/'>Payment</Link>

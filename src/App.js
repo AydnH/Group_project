@@ -17,11 +17,10 @@ import { CompleteProfilePage } from "./pages/Register/CompleteProfile/CompletePr
 function App() {
   return (
     <HashRouter basename='/'>
-      <MainHeader />
 
       <div className='page-container'>
       
-        <Route exact path="/Home" component={HomePage} />
+        <Route exact path="/HomePage" component={HomePage} />
         <Route path="/register" component={RegisterPage} />
         <Route path="/ProfileSetup" component={ProfileSetupPage} />
         <Route path="/CompleteProfile" component={CompleteProfilePage} />
@@ -32,8 +31,6 @@ function App() {
         <Route path="/FinalPage" component={FinalPage} />
 
         <Route path="/Payment" component={PaymentPage} />
-
-        <Route path="/payment" component={PaymentPage} />
         <Route path="/SignUp" component={signUpPage} />
 		
 		<Route path="/Location" component={LocationPage} />
@@ -43,6 +40,8 @@ function App() {
 
        
       </div>
+
+       <MainHeader />
     </HashRouter>
   );
 }
