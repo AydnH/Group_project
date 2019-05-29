@@ -8,22 +8,15 @@ export class FinalPage extends React.Component {
 	
 		<img src={ '../../images/logo.png' } />
 		</picture>
-		<h1>Premium Account</h1>
+		<h1>Sign Up Complete!</h1>
 		<hr/>
-		<p>Your first Month is FREE</p>
-		<hr/>
-		<p>Service Fee <span className="lineThrough">$3</span></p>
-		<p>Premium subscription <span className="lineThrough">$50</span></p>
-		<hr/>
-		<p>Total <span className="green">$0*</span></p>
-		<form>
-			<label>
-				<input type="checkbox" name="RepeatSubsciption" /> I decline a repeat subscription
-			</label>
-		</form>
+		<p>Thank you for signing up for____</p>
+		
+		<p>During the process of signing up we were able to ____</p>
+		
 		<div className='form-control'>
 			<br/>
-			<button>Continue</button>
+			<button>Delete Account</button>
 			</div>
 		</div>
     );

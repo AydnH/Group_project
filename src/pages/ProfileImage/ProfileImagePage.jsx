@@ -1,6 +1,9 @@
 import React from 'react';
 
 export class ProfileImagePage extends React.Component {
+  
+
+  
   render() {
     return (
 		<div id='ProfileImagePage'>
@@ -8,20 +11,13 @@ export class ProfileImagePage extends React.Component {
 	
 		<img src={ '../../images/logo.png' } />
 		</picture>
-		<h1>Premium Account</h1>
-		<hr/>
-		<p>Your first Month is FREE</p>
-		<hr/>
-		<p>Service Fee <span className="lineThrough">$3</span></p>
-		<p>Premium subscription <span className="lineThrough">$50</span></p>
-		<hr/>
-		<p>Total <span className="green">$0*</span></p>
-		<form>
-			<label>
-				<input type="checkbox" name="RepeatSubsciption" /> I decline a repeat subscription
-			</label>
-		</form>
+		<h1>Set Your Profile Image</h1>
+		<p>Set a profile image for your new account</p>
+	
+
 		<div className='form-control'>
+			<br/>
+			<button>Acess Images</button>
 			<br/>
 			<button>Continue</button>
 			</div>

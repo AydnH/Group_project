@@ -8,20 +8,13 @@ export class LocationPage extends React.Component {
 	
 		<img src={ '../../images/logo.png' } />
 		</picture>
-		<h1>Premium Account</h1>
-		<hr/>
-		<p>Your first Month is FREE</p>
-		<hr/>
-		<p>Service Fee <span className="lineThrough">$3</span></p>
-		<p>Premium subscription <span className="lineThrough">$50</span></p>
-		<hr/>
-		<p>Total <span className="green">$0*</span></p>
-		<form>
-			<label>
-				<input type="checkbox" name="RepeatSubsciption" /> I decline a repeat subscription
-			</label>
-		</form>
+		<h1>Find Friends</h1>
+	
+		<p>Find out when your friends are near by</p>
+		
 		<div className='form-control'>
+			<br/>
+			<button>Back</button>
 			<br/>
 			<button>Continue</button>
 			</div>
