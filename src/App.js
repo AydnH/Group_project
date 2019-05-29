@@ -26,6 +26,11 @@ function App() {
         <Route path="/ProfileSetup" component={ProfileSetupPage} />
         <Route path="/CompleteProfile" component={CompleteProfilePage} />
 
+        <Route path="/ProfileSetupPage" component={ProfileSetupPage} />
+        <Route path="/signUpPage" component={signUpPage} />
+        <Route path="/LocationPage" component={LocationPage} />
+        <Route path="/FinalPage" component={FinalPage} />
+
         <Route path="/Payment" component={PaymentPage} />
 
         <Route path="/payment" component={PaymentPage} />

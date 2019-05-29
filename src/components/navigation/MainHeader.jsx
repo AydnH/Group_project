@@ -8,6 +8,11 @@ export class MainHeader extends React.Component {
         <Link to='/'>Home</Link>
         <Link to='/register'>Register</Link>
         <Link to='/my-profile'>My Profile</Link>
+
+        <Link to='/Final/'>Payment</Link>
+        <Link to='/Location/'>Location</Link>
+        <Link to='/ProfileSetup/'>ProfileSet</Link>
+        <Link to='/ProfileImage/'>ProfileImg</Link>
         <Link to='/Payment/'>Payment</Link>
       </header>
     );
