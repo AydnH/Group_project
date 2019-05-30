@@ -14,15 +14,15 @@ export class PaymentPage extends React.Component {
 		<br/>
 		<h1>Premium Account</h1>
 		<hr/>
-		<p>Your first Month is FREE</p>
+		<p>As a welcome gift we're giving you one month of <span className="green">FREE</span> premium membership!</p>
 		<hr/>
 		<p>Service Fee <span className="lineThrough">$3</span></p>
-		<p>Premium subscription <span className="lineThrough">$50</span></p>
+		<p>Premium membership <span className="lineThrough">$50</span></p>
 		<hr/>
-		<p>Total <span className="green">$0*</span></p>
+		<p>Total <span className="green">$0</span></p>
 		<form>
 			<label>
-				<input type="checkbox" name="RepeatSubsciption" /> I decline a repeat subscription
+				<span className="light"><input type="checkbox" name="RepeatSubsciption" /> I decline a repeat subscription</span>
 			</label>
 		</form>
 		<div className='form-control'>

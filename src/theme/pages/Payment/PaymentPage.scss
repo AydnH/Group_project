@@ -6,21 +6,26 @@ img{
 	height:100%;
 	width:100;
 }
+
 div.image-container{
 
 	height:20px;
 	widht:20px;
 }
 
-.lineThrough
-{
+.lineThrough{
 	text-decoration: line-through;
 	float: right;
 }
 
 .green
 {
-	color: green;
+	color: #bbef7c;
+}
+
+.light{
+	color:#28272b;
+	font-size:12px;
 }
 
 hr 
