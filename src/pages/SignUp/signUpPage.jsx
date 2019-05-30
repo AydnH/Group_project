@@ -7,33 +7,45 @@ export class signUpPage extends React.Component {
     return (
 		<div id='signUpPage'>
 		<div className='image-container'>	
-		<img style={{width:70, height: 70}} src={require('./images/logo.png')} alt='Logo'/>
+		<img style={{width:100, height: 100}} src={require('./images/logo.png')} alt='Logo'/>
 		</div>	
 		<br/>
 		<br/>
 		<br/>
+    <br/>
+    <br/>
+    <br/>
 
-		<h1>SIGN UP </h1>
-		<hr/>	
+	 
+			
+    <br/>
 
-		<div>
-  <ButtonToolbar>
-    <Button variant="primary" size="lg">
-      Large button
-    </Button>
-    <Button variant="secondary" size="lg">
-      Large button
-    </Button>
-  </ButtonToolbar>
+		<div className= 'buttonStyle'>
+ <button>SIGN UP</button>
+</div> 
 
-  <ButtonToolbar>
-    <Button variant="primary" size="sm">
-      Small button
-    </Button>
-    <Button variant="secondary" size="sm">
-      Small button
-    </Button>
-  </ButtonToolbar>
+<br/>
+<br/>
+<br/>
+  <div className= 'buttonStyle2'>
+ <button>LOGIN</button>
+</div> 
+
+<br/>
+<br/>
+<br/>
+
+
+  <div className= 'buttonStyle3'>
+ <button>FB</button>
+</div> 
+
+<br/>
+<br/>
+<br/>
+
+  <div className= 'buttonStyle4'>
+ <button>GOOGLE</button>
 </div> 
 
 
