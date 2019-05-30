@@ -9,10 +9,9 @@ export class MainHeader extends React.Component {
         <Link to='/SignUp'>Sign Up</Link>
         <Link to='/my-profile'>My Profile</Link>
 
-        <Link to='/Final/'>Payment</Link>
+        <Link to='/Final/'>Final</Link>
         <Link to='/Location/'>Location</Link>
         <Link to='/ProfileSetup/'>ProfileSet</Link>
-        <Link to='/ProfileImage/'>ProfileImg</Link>
         <Link to='/Payment/'>Payment</Link>
       </header>
     );
