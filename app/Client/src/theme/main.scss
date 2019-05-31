@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #5A5560;
+}
+
+div.page-container {
+  padding: 20px;
+}
+
+
+
+
+h1
+{
+	text-align: center;
+	vertical-align: text-top;
+  font-family: 'Montserrat', sans-serif;
+  color: #E9E585;
+  size:10px;
+}
+img{
+ 
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.image-container{
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+}
+.buttonStyle{
+  background-color: #E9E585;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:35%;
+  boarder-radius:15px;
+  width:30%;
+  border-radius:20px;
+}
+
+.buttonStyle2{
+    background-color: #9D8D8F;
+  color: white;
+  border:none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:35%;
+  boarder-radius:15px;
+  width:30%;
+  border-radius:20px;
+}
+
+.buttonStyle3{
+  background-color: #008CBA; /* Blue */
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:35%;
+  boarder-radius:15px;
+  width:30%;
+  border-radius:20px;
+}
+
+.buttonStyle4{
+   background-color: white;
+  color: red;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:35%;
+  boarder-radius:15px;
+  width:30%;
+  border-radius:20px;
+
+}
+@media (max-width: 1000px){
+
+  img{
+ 
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+}
+
+}
+
+
+
+@import "./components/navigation/MainHeader.scss";
+@import "./components/forms/form-control.scss";
+
+@import "./pages/Home/HomePage.scss";
+@import "./pages/Registration/RegistrationPage.scss";
+@import "./pages/Payment/PaymentPage.scss";
+@import "./pages/Location/LocationPage.scss";
+@import "./pages/Final/FinalPage.scss";
+@import "./pages/ProfileSetup/ProfileSetupPage.scss";
