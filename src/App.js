@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter, Route } from "react-router-dom";
+import axios from 'axios';
 
 import { MainHeader } from './components/navigation/MainHeader';
 import { HomePage } from './pages/Home/HomePage';
