@@ -10,43 +10,39 @@ export class signUpPage extends React.Component {
 		<img style={{width:100, height: 100}} src={require('./images/logo.png')} alt='Logo'/>
 		</div>	
 		<br/>
+
 		<br/>
 		<br/>
     <br/>
-    <br/>
-    <br/>
+    	<br/>
+		<br/>
+    
 
-	 
-			
-    <br/>
+	
+ <button className= 'buttonStyle'><Link to='/RegisterPage'>Register</Link>SIGN UP</button>
 
-		<div className= 'buttonStyle'>
- <button>SIGN UP</button>
-</div> 
 
 <br/>
 <br/>
 <br/>
-  <div className= 'buttonStyle2'>
- <button>LOGIN</button>
-</div> 
+ 
+ <button className= 'buttonStyle2'><Link to='/RegisterPage'>Register</Link>LOGIN</button>
 
 <br/>
 <br/>
 <br/>
 
 
-  <div className= 'buttonStyle3'>
- <button>FB</button>
-</div> 
+
+ <button className= 'buttonStyle3'><Link to='/RegisterPage'>Register</Link><img style={{width:75, height:17}} src={require('./images/facebook.png')} alt='Logo'/></button>
+
 
 <br/>
 <br/>
 <br/>
 
-  <div className= 'buttonStyle4'>
- <button>GOOGLE</button>
-</div> 
+ <button className= 'buttonStyle4'><Link to='/RegisterPage'>Register</Link><img style={{width:20, height:20}} src={require('./images/google.png')} alt='Logo'/></button>
+
 
 
 
