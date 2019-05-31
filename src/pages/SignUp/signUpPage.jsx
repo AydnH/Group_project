@@ -19,14 +19,14 @@ export class signUpPage extends React.Component {
     
 
 	
- <button className= 'buttonStyle'>SIGN UP</button>
+ <button className= 'buttonStyle'><Link to='/RegisterPage'>Register</Link>SIGN UP</button>
 
 
 <br/>
 <br/>
 <br/>
  
- <button className= 'buttonStyle2'>LOGIN</button>
+ <button className= 'buttonStyle2'><Link to='/RegisterPage'>Register</Link>LOGIN</button>
 
 <br/>
 <br/>
@@ -34,14 +34,14 @@ export class signUpPage extends React.Component {
 
 
 
- <button className= 'buttonStyle3'><img style={{width:75, height:17}} src={require('./images/facebook.png')} alt='Logo'/></button>
+ <button className= 'buttonStyle3'><Link to='/RegisterPage'>Register</Link><img style={{width:75, height:17}} src={require('./images/facebook.png')} alt='Logo'/></button>
 
 
 <br/>
 <br/>
 <br/>
 
- <button className= 'buttonStyle4'><img style={{width:20, height:20}} src={require('./images/google.png')} alt='Logo'/></button>
+ <button className= 'buttonStyle4'><Link to='/RegisterPage'>Register</Link><img style={{width:20, height:20}} src={require('./images/google.png')} alt='Logo'/></button>
 
 
 
