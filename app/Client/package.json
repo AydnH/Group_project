@@ -1,5 +1,5 @@
 {
-  "name": "react-start",
+  "name": "client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,5 +43,5 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.0"
   },
-"proxy": "http://localhost3001"
+  "proxy": "http://localhost3001"
 }

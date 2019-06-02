@@ -1,12 +1,31 @@
 import React from 'react';
 import Logo from './images/logo.png';
-
+import { useAlert } from 'react-alert';
 
 export class PaymentPage extends React.Component {
-  render() {
-    return (
 
+render() {
+
+const Alert = () => {
+  const alert = useAlert()
+  return (
+    <button
+      onClick={() => {
+        alert.show( <p>Are you sure you want to decline a repeat subscription?</p>, <button>Agree</button>);
+		
+      }
+      }
+    >
+      Show Alert
+    </button>
+  )
+}
+
+return (
 	<div id='PaymentPage'>		
+
+		<Alert/>
+
 		<div className='image-container'>	
 		<img style={{width:70, height: 70}} src={require('./images/logo.png')} alt='Logo'/>
 		</div>	
@@ -33,4 +52,5 @@ export class PaymentPage extends React.Component {
 	</div>
     );
   }
+
 }

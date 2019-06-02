@@ -2,9 +2,9 @@
   "name": "app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-  	"start":"concurrently \"cd backend && node server.js\" \"cd client && npm start\""
+    "start": "concurrently \"cd Backend && node server.js\" \"cd client && npm start\""
   },
   "author": "",
   "license": "ISC",
