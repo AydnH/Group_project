@@ -1,6 +1,8 @@
 import React from 'react';
 import { ButtonToolbar } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 export class signUpPage extends React.Component {
   render() {
@@ -19,14 +21,14 @@ export class signUpPage extends React.Component {
     
 
 	
- <button className= 'buttonStyle'><Link to='/RegisterPage'>Register</Link>SIGN UP</button>
+ <button className= 'buttonStyle'><Link to='/RegisterPage'>SIGN UP</Link></button>
 
 
 <br/>
 <br/>
 <br/>
  
- <button className= 'buttonStyle2'><Link to='/RegisterPage'>Register</Link>LOGIN</button>
+ <button className= 'buttonStyle2'><Link to='/RegisterPage'>LOGIN</Link></button>
 
 <br/>
 <br/>
@@ -34,14 +36,14 @@ export class signUpPage extends React.Component {
 
 
 
- <button className= 'buttonStyle3'><Link to='/RegisterPage'>Register</Link><img style={{width:75, height:17}} src={require('./images/facebook.png')} alt='Logo'/></button>
+ <button className= 'buttonStyle3'><Link to='/RegisterPage'><img style={{width:75, height:17}} src={require('./images/facebook.png')} alt='Logo'/></Link></button>
 
 
 <br/>
 <br/>
 <br/>
 
- <button className= 'buttonStyle4'><Link to='/RegisterPage'>Register</Link><img style={{width:20, height:20}} src={require('./images/google.png')} alt='Logo'/></button>
+ <button className= 'buttonStyle4'><Link to='/RegisterPage'><img style={{width:20, height:20}} src={require('./images/google.png')} alt='Logo'/></Link></button>
 
 
 
