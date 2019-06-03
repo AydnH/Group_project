@@ -13,7 +13,7 @@ import AlertTemplate from 'react-alert-template-basic'
 // Alert config
 const options = {
   position: positions.MIDDLE,
-  timeout: 9000,
+  timeout: 0,
   offset: '30px',
   transition: transitions.SCALE
 }
@@ -26,5 +26,4 @@ const Root = () => (
  
 render(<Root />, document.getElementById('root'));
 
-/* ReactDOM.render(<HashRouter><App /></HashRouter>, document.getElementById('root'));*/
 
