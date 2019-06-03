@@ -33,10 +33,10 @@ render(){
           setSubmitting(false);
                   }, 400);
         axios.post('http://localhost:3001/api/putData', {
-          email: '',
-          password: '',
-          name: '',
-          hasAgreed: ''
+          email: values.email,
+          password: values.password,
+          name: values.name,
+          hasAgreed: values.hasAgreed
         });
       }}
     >

@@ -22,13 +22,30 @@ export class ProfileSetupPage extends React.Component {
     <h1>Finish Profile</h1>
     <Formik
 
-      initialValues={{ Age: '', Sex: '', Phone_number:'', Adress:'', Relationship_status:'', Ethnicity:''}}
+      initialValues={{ Age: '', Sex: '', Phone_number:'', Address:'', Relationship_status:'', Ethnicity:''}}
+      validate={values => {
+        let errors = {};
+        if (!values.Age >10) {
+          errors.Age = 'Too Young';
+  
+          errors.Age = 'Invalid Age';
+        }
+        return errors;
+      }}
 
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
           console.log(JSON.stringify(values,null, 2));
           setSubmitting(false);
                   }, 400);
+        axios.post('http://localhost:3001/api/put-Data', {
+          Age: values.Age,
+          Sex: values.Sex,
+          Phone_number: values.Phone_number,
+          Address: values.Address,
+          Relationship_status: values.Relationship_status,
+          Ethnicity: values.Ethnicity
+        });
       }}
     >
       {({ isSubmitting }) => (
@@ -47,8 +64,8 @@ export class ProfileSetupPage extends React.Component {
           <Field type="Phone_number" name="Phone_number"placeholder="Please Enter Phone number" />
           <ErrorMessage name="Phone_number" component="div" />
           <br/><br/>
-          <Field type="Adress" name="Adress"placeholder="Please Enter Your address" />
-          <ErrorMessage name="Adress" component="div" />
+          <Field type="Address" name="Address"placeholder="Please Enter Your address" />
+          <ErrorMessage name="Address" component="div" />
           <br/><br/>
           <Field type="Relationship_status" name="Relationship_status"placeholder="Relationship status" />
           <ErrorMessage name="Relationship_status" component="div" />

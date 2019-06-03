@@ -1,11 +1,10 @@
 var mongoose = require('mongoose');
-var schema = mongoose.Schema;
+var Schema = mongoose.Schema;
 
-const Data = new mongoose.Schema({
-
+var DataSchema = new Schema({
 	Age:Number,
 	Sex:String,
-	Phone:Number,
+	Phone_number:Number,
 	Address:String,	
 	Relationship:String,	
 	Ethnicity:String,
@@ -17,5 +16,4 @@ const Data = new mongoose.Schema({
 	}
 });
 
-
-module.exports = mongoose.model('Data', Data);
+module.exports = mongoose.model('Data', DataSchema);

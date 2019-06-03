@@ -9,6 +9,8 @@ const Data = require('./Models/Data');
 const API_PORT = 3001;
 const app = express();
 app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({ extended: true}));
 const router = express.Router()
 
 const dbRoute = 'mongodb+srv://Aydn:F1s2t7r9aw10%21@database-tsy14.mongodb.net/test?retryWrites=true&w=majority';
@@ -29,13 +31,23 @@ router.get('/getData', (req, res) => {
 		return res.json({success: true, user:user})
 	});
 });
-
+//Register
 router.post('/putData', function(req, res){
 	User.create(req.body).then(function(user){
 		res.send(user);
 	});
 });
 router.put('/putData',function(req, res){
+	res.send({type:'PUT'});
+});
+
+//SetUp
+router.post('/put-Data', function(req, res){
+	Data.create(req.body).then(function(data){
+		res.send(data);
+	});
+});
+router.post('put-Data', function(req, res){
 	res.send({type:'PUT'});
 });
 
