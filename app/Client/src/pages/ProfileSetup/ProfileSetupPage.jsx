@@ -1,68 +1,69 @@
-import React from 'react';
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import axios from 'axios';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import Logo from './images/logo.png';
+
+
 
 export class ProfileSetupPage extends React.Component {
   render() {
     return (
-		<div id='ProfileSetupPage'>
-		<div className='image-container'>	
-			<img style={{width:70, height: 70}} src={require('./images/logo.png')} alt='Logo'/>
-		</div>
-		
-		<br/><br/>
-		
-		<h1>Set up</h1>
-		
-		<hr/>
-		<p> Please answer some quick questions about yourself.</p>
-		
-		<div className='form-control'>
-        <label>Age* </label>
-		<input Style="width:50px;"type="number" />
-		
-		<label> Sex* </label>
-		<select name="Sex">
-			<option value="male">Male</option>
-			<option value="female">Female</option>
-		</select> 
-          
-		<br/>  <br/> 
-		  
-        <label>Phone number*</label>
-        <input type="number" />
-          
-		<br/> <br/>  
-		        
-        <label>Adress</label>
-        <input type="text" />
-       
-		<br/> <br/> 
-		      
-        <label>Relationship status</label>
-        <input type="text" />
-          
-		<br/> <br/> 
-          
-        <label>Ethnicity</label>
-        <input type="text" />
-          
-		<br/> <br/> 
-		
-		<label>Security Question* </label>
-        <select name="Security Question">
-		  <option value="maidenName">What is your mother’s maiden name?</option>
-		  <option value="firstPet">What was the name of your first pet?</option>
-		  <option value="creditCard">What is your credit card number?</option>
-		  <option value="firstCompany">What was the first company that you worked for?</option>
-		</select> 
+<div>
+  	<div id='ProfileSetupPage'>
+	<div className='image-container'>	
+		<img style={{width:70, height: 70}} src={require('./images/logo.png')} alt='Logo'/>
+	</div>
+	</div>
+	<br/> <br/>
 
-        <input type="text" />
+    <h1>Finish Profile</h1>
+    <Formik
+
+      initialValues={{ Age: '', Sex: '', Phone_number:'', Adress:'', Relationship_status:'', Ethnicity:''}}
+
+      onSubmit={(values, { setSubmitting }) => {
+        setTimeout(() => {
+          console.log(JSON.stringify(values,null, 2));
+          setSubmitting(false);
+                  }, 400);
+      }}
+    >
+      {({ isSubmitting }) => (
+        <Form>
+          <Field type="Age" name="Age" placeholder="Age"/>
+          <ErrorMessage name="Age" component="div"/>
+          <br/><br/>
+          <select type="sex" name="Sex" placeholder="Sex?">
+          	<option type= 'Sex' label='Sex' />
+          	<option type= 'male' label='male' />
+          	<option type= 'female' label='female'/>
+          	<option type= 'other' label='other'/>
+          </select>
+          <ErrorMessage name="Sex" component="div" />
+          <br/><br/>
+          <Field type="Phone_number" name="Phone_number"placeholder="Please Enter Phone number" />
+          <ErrorMessage name="Phone_number" component="div" />
+          <br/><br/>
+          <Field type="Adress" name="Adress"placeholder="Please Enter Your address" />
+          <ErrorMessage name="Adress" component="div" />
+          <br/><br/>
+          <Field type="Relationship_status" name="Relationship_status"placeholder="Relationship status" />
+          <ErrorMessage name="Relationship_status" component="div" />
+          <br/><br/>
+          <Field type="Ethnicity" name="Ethnicity"placeholder="Ethnicity" />
+          <ErrorMessage name="Ethnicity" component="div" />
+          <br/><br/>
           
-		<br/> <br/> 
-		  
-        <button>Continue</button>
-        </div>
-      </div>
-    );
+          <button type="submit" disabled={isSubmitting}>
+            Submit
+          </button>
+        </Form>
+      )}
+    </Formik>
+</div>  
+  )};
   }
-}
+

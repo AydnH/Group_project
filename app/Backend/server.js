@@ -24,34 +24,19 @@ app.use(bodyParser.json());
 app.use(logger('dev'));
 
 router.get('/getData', (req, res) => {
-	User.find((err, data) => {
+	User.find((err, user) => {
 		if (err) return res.json({ success: false, error: err});
-		return res.json({success: true, data:data})
+		return res.json({success: true, user:user})
 	});
 });
 
-router.post('/putData', (req, res) => {
-	let user = new User();
-
-	const {
-		email,
-		Name,
-		password
-
-	} = req.body;
-	if((!email && email !=='') ||!Name, !password) {
-		return res.json({
-			success: false,
-			error:"invalid",
-		});
-	}
-	user.email = email;
-	user.Name = firstName;
-	user.password = password;
-	user.save((err) => {
-		if (err) return res.json({success: false, error: err});
-		 // return res.json{( success: true)};
+router.post('/putData', function(req, res){
+	User.create(req.body).then(function(user){
+		res.send(user);
 	});
+});
+router.put('/putData',function(req, res){
+	res.send({type:'PUT'});
 });
 
 app.use('/api', router);

@@ -6,6 +6,8 @@ import axios from 'axios';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { CompleteProfilePage } from "./CompleteProfile/CompleteProfilePage"
 
+const url = "'http://localhost:3001/api/putData'";
+
 export class RegisterPage extends React.Component{
 
 render(){
@@ -28,9 +30,14 @@ render(){
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
           console.log(JSON.stringify(values,null, 2));
-
           setSubmitting(false);
                   }, 400);
+        axios.post('http://localhost:3001/api/putData', {
+          email: '',
+          password: '',
+          name: '',
+          hasAgreed: ''
+        });
       }}
     >
       {({ isSubmitting }) => (
