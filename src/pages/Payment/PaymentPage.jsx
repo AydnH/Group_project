@@ -2,30 +2,29 @@ import React from 'react';
 import Logo from './images/logo.png';
 import { useAlert } from 'react-alert';
 
+import { ButtonToolbar } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
+
 export class PaymentPage extends React.Component {
 
 render() {
 
 const Alert = () => {
-  const alert = useAlert()
+	const alert = useAlert();
   return (
-    <button
-      onClick={() => {
-        alert.show( <p>Are you sure you want to decline a repeat subscription?</p>, <button>Agree</button>);
-		
-      }
-      }
-    >
-      Show Alert
-    </button>
-  )
+   
+			<input type="checkbox" id="RepeatSubsciption" onClick={() => {
+					alert.show( <p>Are you sure you want to decline a repeat subscription?<br/><br/><button  onClick={() => {
+					document.getElementById("RepeatSubsciption").checked = false; 
+				  }} >Agree</button></p>)
+				  }}/>
+		)
 }
+
+		
 
 return (
 	<div id='PaymentPage'>		
-
-		<Alert/>
-
 		<div className='image-container'>	
 		<img style={{width:70, height: 70}} src={require('./images/logo.png')} alt='Logo'/>
 		</div>	
@@ -39,15 +38,17 @@ return (
 		<p>Premium membership <span className="lineThrough">$50</span></p>
 		<hr/>
 		<p>Total <span className="green">$0</span></p>
+
 		<form>
 			<label>
-				<span className="light"><input type="checkbox" name="RepeatSubsciption" /> I decline a repeat subscription</span>
+			<span className="light"><Alert/>I decline a repeat subscription</span>
 			</label>
+			
 		</form>
 		<div className='form-control'>
 			<br/>
-
-			<button>Continue</button>
+ <button >Continue</button>
+			
 		</div>
 	</div>
     );
