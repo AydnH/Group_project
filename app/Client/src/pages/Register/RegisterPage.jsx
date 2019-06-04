@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { CompleteProfilePage } from "./CompleteProfile/CompleteProfilePage"
-
+import { CompleteProfilePage } from "./CompleteProfile/CompleteProfilePage";
+import { TCPage } from "./TC/TCPage";
 const url = "'http://localhost:3001/api/putData'";
+
+
 
 export class RegisterPage extends React.Component{
 
@@ -55,6 +57,7 @@ render(){
         </Form>
       )}
     </Formik>
+	<span className="light"><input type="checkbox" id="TCCheckBox"/>I agree to the <Link to='/TC'>Terms and Conditions</Link></span>
   </div>
 )};
 }
