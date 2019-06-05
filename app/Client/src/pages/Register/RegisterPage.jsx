@@ -15,7 +15,16 @@ export class RegisterPage extends React.Component{
 render(){
   return(
   <div>
-    <h1>Register</h1>
+
+  <div className='image-container'> 
+    <img style={{width:80, height: 80}} src={require('./images/logo.png')} alt='Logo'/>
+    </div>  
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <h1>REGISTER</h1>
     <Formik
       initialValues={{ email: '', password: '', name:'', hasAgreed:false }}
       validate={values => {
@@ -43,21 +52,30 @@ render(){
       }}
     >
       {({ isSubmitting }) => (
-        <Form>
-          <Field type="email" name="email" placeholder="Email"/>
+        <Form className = 'formStyle'>
+          <Field className= 'formBox' type="email" name="email" placeholder="Email"/>
+          <br/>
           <ErrorMessage name="email" component="div"/>
-          <Field type="password" name="password" placeholder="password"/>
+          <br/>
+          <Field className= 'formBox2'type="password" name="password" placeholder="password"/>
+          <br/>
           <ErrorMessage name="password" component="div" />
-          <Field type="name" name="name"placeholder="Please Enter Full Name" />
+          <br/>
+          <Field className= 'formBox3' type="name" name="name"placeholder="Please Enter Full Name" />
           <ErrorMessage name="name" component="div" />
+          <br/>
+          <br/>
           <Field type="checkbox" name="hasAgreed" />
-          <button type="submit" disabled={isSubmitting}>
+          <button className ='buttonSubmit' type="submit" disabled={isSubmitting}>
             Submit
           </button>
         </Form>
       )}
     </Formik>
-	<span className="light"><input type="checkbox" id="TCCheckBox"/>I agree to the <Link to='/TC'>Terms and Conditions</Link></span>
+    <br/>
+    <br/>
+    <br/>
+	<span className="light"><center><input type="checkbox" id="TCCheckBox"/> I agree to the <Link to='/TC'>Terms and Conditions</Link></center></span>
   </div>
 )};
 }

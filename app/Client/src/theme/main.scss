@@ -34,8 +34,15 @@ h1
 	vertical-align: text-top;
   font-family: 'Montserrat', sans-serif;
   color: #E9E585;
-  size:10px;
+  font-size: 25px;
 }
+
+h2
+{
+  
+  colour: #E9E585;
+}
+
 img{
  
   display: center;
@@ -112,6 +119,60 @@ img{
   border-radius:20px;
 
 }
+
+.formStyle{
+  color: white;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  width: 30%;
+  margin-left: auto;
+  margin-right:auto;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttonSubmit{
+     background-color: white;
+  color: red;
+  border: none;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin-left:10%;
+  boarder-radius:5px;
+  width:20%;
+  border-radius:20px;
+}
+
+.formBox {
+  
+  padding: 8px;
+  width:100%;
+  border: none;
+  border-radius:20px;
+
+}
+.formBox2 {
+  
+  padding: 8px;
+  width:100%;
+  border: none;
+  border-radius:20px;
+}
+.formBox3 {
+  
+  padding: 8px;
+  width:100%;
+  border: none;
+  border-radius:20px;
+}
+
 @media (max-width: 1000px){
 
   img{
