@@ -12,11 +12,8 @@ render() {
 const Alert = () => {
 	const alert = useAlert();
   return (
-   
 			<input type="checkbox" id="RepeatSubsciption" onClick={() => {
-					alert.show( <p>Are you sure you want to decline a repeat subscription?<br/><br/><button  onClick={() => {
-					document.getElementById("RepeatSubsciption").checked = false; 
-				  }} >Agree</button></p>)
+					alert.show(<p>Are you sure you want to decline a repeat subscription?</p>)
 				  }}/>
 		)
 }

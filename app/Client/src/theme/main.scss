@@ -10,9 +10,6 @@ div.page-container {
   padding: 20px;
 }
 
-
-
-
 h1
 {
 	text-align: center;
@@ -41,14 +38,14 @@ img{
   background-color: #E9E585;
   color: white;
   border: none;
-  padding: 15px 32px;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-left:35%;
+  margin-left:25%;
   boarder-radius:15px;
-  width:30%;
+  width:50%;
   border-radius:20px;
 }
 
@@ -56,14 +53,14 @@ img{
     background-color: #9D8D8F;
   color: white;
   border:none;
-  padding: 15px 32px;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-left:35%;
+  margin-left:25%;
   boarder-radius:15px;
-  width:30%;
+  width:50%;
   border-radius:20px;
 }
 
@@ -71,14 +68,14 @@ img{
   background-color: #008CBA; /* Blue */
   color: white;
   border: none;
-  padding: 15px 32px;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-left:35%;
+  margin-left:25%;
   boarder-radius:15px;
-  width:30%;
+  width:50%;
   border-radius:20px;
 }
 
@@ -86,14 +83,14 @@ img{
    background-color: white;
   color: red;
   border: none;
-  padding: 15px 32px;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin-left:35%;
+  margin-left:25%;
   boarder-radius:15px;
-  width:30%;
+  width:50%;
   border-radius:20px;
 
 }
@@ -110,8 +107,6 @@ img{
 
 }
 
-
-
 @import "./components/navigation/MainHeader.scss";
 @import "./components/forms/form-control.scss";
 
@@ -121,3 +116,4 @@ img{
 @import "./pages/Location/LocationPage.scss";
 @import "./pages/Final/FinalPage.scss";
 @import "./pages/ProfileSetup/ProfileSetupPage.scss";
+@import "./pages/Registration/TCPage.scss";

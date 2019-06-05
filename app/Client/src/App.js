@@ -13,8 +13,9 @@ import { PaymentPage } from './pages/Payment/PaymentPage';
 import { SignUpPage } from './pages/SignUp/signUpPage';
 import { LocationPage } from './pages/Location/LocationPage';
 import { FinalPage } from './pages/Final/FinalPage';
+import { TCPage } from './pages/Register/TC/TCPage';
 
-import { CompleteProfilePage } from "./pages/Register/CompleteProfile/CompleteProfilePage"
+import { CompleteProfilePage } from "./pages/Register/CompleteProfile/CompleteProfilePage";
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
 		
 		    <Route path="/Location" component={LocationPage} />
         <Route path="/Final" component={FinalPage} />
-       
+       <Route path="/TC" component={TCPage} />
 
        
       </div>
