@@ -38,14 +38,15 @@ display: left;
 
 .buttonStyleHome2{
  background-color:#E9E585;
-  //border: none;
-  //color: white;
-  padding: 20px;
+  border: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   border-radius:50%;
   margin-left: 60%;
 }

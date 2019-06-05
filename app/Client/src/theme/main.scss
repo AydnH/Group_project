@@ -10,6 +10,24 @@ div.page-container {
   padding: 20px;
 }
 
+ul li
+{
+    line-height: 0.8;
+    list-style: none;
+}
+
+ul li::before {
+  color: #E9E585;  
+
+  content: "\2022"; 
+
+  position: relative;
+  padding-right:8px;
+  top: 8px;
+  font-size: 40px;
+
+}
+
 h1
 {
 	text-align: center;
