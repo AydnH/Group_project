@@ -54,13 +54,13 @@ render(){
       {({ isSubmitting }) => (
         <Form className = 'formStyle'>
           <Field className= 'formBox' type="email" name="email" placeholder="Email"/>
-          <br/>
+          <br/><br/>
           <ErrorMessage name="email" component="div"/>
-          <br/>
+          <br/><br/>
           <Field className= 'formBox2'type="password" name="password" placeholder="password"/>
-          <br/>
+          <br/><br/>
           <ErrorMessage name="password" component="div" />
-          <br/>
+          <br/><br/>
           <Field className= 'formBox3' type="name" name="name"placeholder="Please Enter Full Name" />
           <ErrorMessage name="name" component="div" />
           <br/>
