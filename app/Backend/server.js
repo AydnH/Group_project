@@ -31,25 +31,24 @@ router.get('/getData', (req, res) => {
 		return res.json({success: true, user:user})
 	});
 });
+
 //Register
 router.post('/putData', function(req, res){
 	User.create(req.body).then(function(user){
 		res.send(user);
-	});
+		console.log(user);
+		});
 });
-router.put('/putData',function(req, res){
-	res.send({type:'PUT'});
-});
+
 
 //SetUp
 router.post('/put-Data', function(req, res){
 	Data.create(req.body).then(function(data){
 		res.send(data);
+		console.log(data);
 	});
 });
-router.post('put-Data', function(req, res){
-	res.send({type:'PUT'});
-});
+
 
 app.use('/api', router);
 app.listen(API_PORT, () => console.log(`LISTENING ON PORT ${API_PORT}`));
