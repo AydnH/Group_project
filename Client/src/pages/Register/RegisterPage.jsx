@@ -1,12 +1,10 @@
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import axios from 'axios';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { CompleteProfilePage } from "./CompleteProfile/CompleteProfilePage";
-import { TCPage } from "./TC/TCPage";
-const url = "'http://localhost:3001/api/putData'";
+
+
+
 
 
 
@@ -65,7 +63,7 @@ render(){
           <ErrorMessage name="name" component="div" />
           <br/>
           <br/>
-          <Field type="checkbox" name="hasAgreed" /><span className="TC"> I agree to the<Link to='/TC'>Terms and Conditions</Link></span>
+          <Field type="checkbox" name="hasAgreed" /><span className="TC">I agree to the <Link to='/TC'>Terms and Conditions</Link></span>
           <br/><br/>
           <button className ='buttonSubmit' type="submit" disabled={isSubmitting}><Link to='/profileSetup'><b> >> </b></Link>
             

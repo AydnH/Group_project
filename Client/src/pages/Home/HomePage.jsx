@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ButtonToolbar } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
 
 export class HomePage extends React.Component {
   render() {

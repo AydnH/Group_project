@@ -1,9 +1,5 @@
 import React from 'react';
-import { ButtonToolbar } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
-
 import { useAlert } from 'react-alert';
 
 export class SignUpPage extends React.Component {

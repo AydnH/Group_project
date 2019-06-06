@@ -1,9 +1,5 @@
 import React from 'react';
-import Logo from './images/logo.png';
-import { useAlert } from 'react-alert';
 
-import { ButtonToolbar } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
 
 export class PaymentPage extends React.Component {
 
