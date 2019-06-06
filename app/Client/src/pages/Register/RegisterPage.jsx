@@ -65,17 +65,16 @@ render(){
           <ErrorMessage name="name" component="div" />
           <br/>
           <br/>
-          <Field type="checkbox" name="hasAgreed" />
+          <Field type="checkbox" name="hasAgreed" /><span className="TC"> I agree to the<Link to='/TC'>Terms and Conditions</Link></span>
+          <br/><br/>
           <button className ='buttonSubmit' type="submit" disabled={isSubmitting}>
             Submit
           </button>
         </Form>
       )}
     </Formik>
-    <br/>
-    <br/>
-    <br/>
-	<span className="light"><center><input type="checkbox" id="TCCheckBox"/> I agree to the <Link to='/TC'>Terms and Conditions</Link></center></span>
+  
+	
   </div>
 )};
 }

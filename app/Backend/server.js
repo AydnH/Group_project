@@ -31,6 +31,12 @@ router.get('/getData', (req, res) => {
 		return res.json({success: true, user:user})
 	});
 });
+router.get('/get-Data', (req, res) => {
+	Data.find((err, data) => {
+		if(err) return res.json({success: false, error:err});
+		return res.json({success: true, data:data})
+	});
+});
 
 //Register
 router.post('/putData', function(req, res){
