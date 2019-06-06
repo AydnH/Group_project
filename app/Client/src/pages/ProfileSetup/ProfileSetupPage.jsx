@@ -56,11 +56,14 @@ export class ProfileSetupPage extends React.Component {
           <ErrorMessage name="Age" component="div"/>
           <br/><br/>
           <select className= 'age2' type="sex" name="Sex" placeholder="Sex?">
+          <select className= 'age2' defaultValue= '' type="sex" name="Sex" placeholder="Sex?">
           	<option type= 'Sex' label='Sex' />
           	<option type= 'male' label='male' />
           	<option type= 'female' label='female'/>
           	<option type= 'other' label='other'/>
           </select>
+
+          
           <ErrorMessage name="Sex" component="div" />
           <br/><br/>
           <Field className= 'age2' type="Phone_number" name="Phone_number"placeholder="Please Enter Phone number" />
