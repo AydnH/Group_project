@@ -163,18 +163,21 @@ img{
 }
 
 .buttonSubmit{
-     background-color: white;
-  color: red;
+    background-color: #E9E585;
+  padding: 25px;
+  margin-top:20px;
   border: none;
-  padding: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 10px;
-  margin-left:10%;
-  boarder-radius:5px;
-  width:20%;
-  border-radius:20px;
+  border-radius:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+  font-size: 12px;
+ 
 }
 
 .formBox {
