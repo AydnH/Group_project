@@ -11,11 +11,11 @@ render() {
 return (
 	<div id='PaymentPage'>		
 		<div className='image-container'>	
-		<img style={{width:70, height: 70}} src={require('./images/logo.png')} alt='Logo'/>
+		<img style={{width:80, height: 80}} src={require('./images/logo.png')} alt='Logo'/>
 		</div>	
-		<br/>
-		<br/>
-		<h1>Premium Account</h1>
+			<br/> <br/><br/> <br/>
+<hr/>
+		<h1>PREMIUN ACCOUNT</h1>
 		<hr/>
 		<p>As a welcome gift we're giving you one month of <span className="green">FREE</span> premium membership!</p>
 		<hr/>
@@ -32,7 +32,7 @@ return (
 		</form>
 		<div className='form-control'>
 			<br/>
- <button >Continue</button>
+ <button className= 'continue'>Continue</button>
 			
 		</div>
 	</div>

@@ -144,18 +144,22 @@ img{
 }
 
 .formStyle{
-  color: white;
+ padding: 8px;
+  margin-top:20px;
   border: none;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  width: 30%;
-  margin-left: auto;
-  margin-right:auto;
-    display: flex;
+  border-radius:20px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+  width:40%;
+  color: white;
+  border: none;
+  
 }
 
 .buttonSubmit{
@@ -210,6 +214,56 @@ img{
   display:block; 
   margin-left: auto;
   margin-right:auto;
+}
+.age2{
+   padding: 8px;
+  margin-top:20px;
+  border: none;
+  border-radius:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+  width:40%;
+}
+.container{
+  
+}
+.submitB{
+  background-color: #E9E585;
+  padding: 25px;
+  margin-top:20px;
+  border: none;
+  border-radius:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+  font-size: 12px;
+  
+}
+
+.continue{
+  background-color: #E9E585;
+   padding: 8px;
+  margin-top:20px;
+  border: none;
+  border-radius:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+p{
+  color: white;
 }
 
 @media (max-width: 1000px){
