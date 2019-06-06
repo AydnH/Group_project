@@ -8,18 +8,6 @@ import { Button } from 'react-bootstrap';
 export class PaymentPage extends React.Component {
 
 render() {
-
-const Alert = () => {
-	const alert = useAlert();
-  return (
-			<input type="checkbox" id="RepeatSubsciption" onClick={() => {
-					alert.show(<p>Are you sure you want to decline a repeat subscription?</p>)
-				  }}/>
-		)
-}
-
-		
-
 return (
 	<div id='PaymentPage'>		
 		<div className='image-container'>	
@@ -38,7 +26,7 @@ return (
 
 		<form>
 			<label>
-			<span className="light"><Alert/>I decline a repeat subscription</span>
+			<span className="light"><input type="checkbox" id="RepeatSubsciption"/> I decline a repeat subscription</span>
 			</label>
 			
 		</form>

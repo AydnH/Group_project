@@ -13,13 +13,10 @@ import { Provider as AlertProvider } from 'react-alert';
 const AlertTemplate = ({ style, options, message, close }) => (
   <div style={{padding:10, background: '#E9E585', }}>
 
+    {options.type === 'error' && 'ERROR'}
 
-    {message}
-		
-					<button  className= 'buttonStyle2' onClick={() => {
-					document.getElementById("RepeatSubsciption").checked = false
-				  }} onClick={close}>Agree</button>
-				
+<button className= 'buttonStyleAlert' onClick={close}>x</button>
+    {message}			
   </div>
 )
  
