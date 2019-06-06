@@ -17,9 +17,10 @@ export class ProfileSetupPage extends React.Component {
 		<img style={{width:70, height: 70}} src={require('./images/logo.png')} alt='Logo'/>
 	</div>
 	</div>
-	<br/> <br/>
 
-    <h1>Finish Profile</h1>
+	<br/> <br/><br/> <br/>
+<hr/>
+    <h1>FINISH PROFILE</h1>
     <Formik
 
       initialValues={{ Age: '', Sex: '', Phone_number:'', Address:'', Relationship_status:'', Ethnicity:''}}
@@ -50,7 +51,7 @@ export class ProfileSetupPage extends React.Component {
     >
       {({ isSubmitting }) => (
         <Form>
-          <Field type="Age" name="Age" placeholder="Age"/>
+          <Field className= 'age' type="Age" name="Age" placeholder="Age"/>
           <ErrorMessage name="Age" component="div"/>
           <br/><br/>
           <select type="sex" name="Sex" placeholder="Sex?">
