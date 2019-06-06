@@ -4,13 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "install": "npm run install:client && npm run install:server",
-    "install:client": "(cd ./Client && npm install)",
-    "install:server": "(cd ./Backend && npm install)",
-    "start": "npm run start:dev",
-    "start:dev": "npm run start:client & npm run start:server",
-    "start:client": "(cd ./client && npm run start)",
-    "start:server": "(cd ./Backend && npm run start:watch)"
+"start":"concurently \"cd Backend && node server.js\" \"cd client && npm start\",
   },
   "author": "",
   "license": "ISC",
