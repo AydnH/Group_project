@@ -67,8 +67,8 @@ render(){
           <br/>
           <Field type="checkbox" name="hasAgreed" /><span className="TC"> I agree to the<Link to='/TC'>Terms and Conditions</Link></span>
           <br/><br/>
-          <button className ='buttonSubmit' type="submit" disabled={isSubmitting}>
-            Submit
+          <button className ='buttonSubmit' type="submit" disabled={isSubmitting}><Link to='/profileSetup'><b> >> </b></Link>
+            
           </button>
         </Form>
       )}
