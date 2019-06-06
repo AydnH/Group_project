@@ -1,4 +1,4 @@
-# Group_project
+np# Group_project
 Everyones work is now merged into the app folder/
 Front end is in the Client folder back end is in the back end folder.
 ive green lit all of the database access so you wont need credentials for it to test if you want to be able to see the database
