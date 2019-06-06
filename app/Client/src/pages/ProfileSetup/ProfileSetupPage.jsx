@@ -55,7 +55,7 @@ export class ProfileSetupPage extends React.Component {
           <Field className= 'age2' type="Age" name="Age" placeholder="Age"/>
           <ErrorMessage name="Age" component="div"/>
           <br/><br/>
-          <select className= 'age2' type="sex" name="Sex" placeholder="Sex?">
+
           <select className= 'age2' defaultValue= '' type="sex" name="Sex" placeholder="Sex?">
           	<option type= 'Sex' label='Sex' />
           	<option type= 'male' label='male' />
