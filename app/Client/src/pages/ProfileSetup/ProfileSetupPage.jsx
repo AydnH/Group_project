@@ -60,9 +60,7 @@ export class ProfileSetupPage extends React.Component {
           	<option type= 'male' label='male' />
           	<option type= 'female' label='female'/>
           	<option type= 'other' label='other'/>
-          </select>
-
-          
+          </select>          
           <ErrorMessage name="Sex" component="div" />
           <br/><br/>
           <Field className= 'age2' type="Phone_number" name="Phone_number"placeholder="Please Enter Phone number" />
