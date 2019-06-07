@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 const router = express.Router()
-// const path = require();
+const path = require();
 
 const dbRoute = 'mongodb+srv://Aydn:F1s2t7r9aw10%21@database-tsy14.mongodb.net/test?retryWrites=true&w=majority';
 mongoose.connect(dbRoute, { useNewUrlParser: true });
@@ -21,15 +21,15 @@ mongoose.connect(dbRoute, { useNewUrlParser: true });
 let db = mongoose.connection;
 db.once('open', () => console.log('connected to the database'));
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-//serve static assests if in production
-// if(process.env.NODE_ENV == 'production') {
-// 	//set static folder
-// 	app.use(express.static('client/build'));
+serve static assests if in production
+if(process.env.NODE_ENV == 'production') {
+	//set static folder
+	app.use(express.static('client/build'));
 
-// 	app.get('*', (req, res) => {
-// 		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
-// 	});
-// }
+	app.get('*', (req, res) => {
+		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+	});
+}
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(logger('dev'));
