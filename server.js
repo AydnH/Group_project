@@ -21,8 +21,13 @@ mongoose.connect(dbRoute, { useNewUrlParser: true });
 let db = mongoose.connection;
 db.once('open', () => console.log('connected to the database'));
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
-serve static assests if in production
-if(process.env.NODE_ENV == 'production') {
+// serve static assests if in production
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(logger('dev'));
+
+
+if(process.env.NODE_ENV === 'production') {
 	//set static folder
 	app.use(express.static('client/build'));
 
@@ -30,9 +35,7 @@ if(process.env.NODE_ENV == 'production') {
 		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 	});
 }
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-app.use(logger('dev'));
+
 
 router.get('/getData', (req, res) => {
 	User.find((err, user) => {
