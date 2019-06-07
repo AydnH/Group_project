@@ -281,6 +281,20 @@ img{
 p{
   color: white;
 }
+.homePlacement{
+  background-colour:#55495e;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+
+
+}
 
 @media (max-width: 1000px){
 

@@ -9,26 +9,34 @@ export class HomePage extends React.Component {
       <div className='header'>
  </div>
 		<div className='image-homepage'>	
-		<img style={{width:100, height:100}} src={require('./images/logoHomePage.png')} alt='Logo'/>
+		<img style={{width:80, height:80}} src={require('./images/logoHomePage.png')} alt='Logo'/>
 		</div>	
+    <br/>
       <div className='header'>
+<hr/>
  <h1>CONNECTION</h1>
  </div>
+ <br/>
 
- <button className= 'buttonStyle'><Link to='/SignUp'>START</Link></button>
 
-		
+<img style={{width:300, height:200}} src={require('./images/finalimg.png')} alt='HomePageImg'/>
 <br/>
-<br/>
-<p>Connection is a brand new social media app</p>
-<p>Use Connection to:</p>
-<ul>
-<li>Connect and share with friends and family.</li>
-<li>Discover what's happening around the world.</li>
-<li>Make lasting relationships with new people</li>
-</ul>
 
-<img style={{width:100, height:100}} src={require('./images/placeholder.png')} alt='HomePageImg'/>
+<div className= 'homePlacement'>
+
+<p>- Connect and share with family and friends</p>
+
+<p>- Discover whats happening near you</p>
+
+<p>- Make lasting relationships with new people</p>
+<br/>
+</div>
+
+<p><center><b> SIGN UP TODAY!</b></center></p>
+
+
+ <button className= 'submitB' type="submit"><Link to='/SignUp'><b> >> </b></Link>
+          </button>
 
       </div>
 
