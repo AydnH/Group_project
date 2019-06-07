@@ -24,7 +24,7 @@ render(){
     <hr/>
     <h1>REGISTER</h1>
     <Formik
-      initialValues={{ email: '', password: '', name:'', hasAgreed:false }}
+      initialValues={{ email: '',username:'', password: '', name:'', hasAgreed:false }}
       validate={values => {
         let errors = {};
         if (!values.email) {
@@ -43,6 +43,7 @@ render(){
                   }, 400);
         axios.post('http://localhost:3001/api/putData', {
           email: values.email,
+          username: values.username,
           password: values.password,
           name: values.name,
           hasAgreed: values.hasAgreed
@@ -51,9 +52,9 @@ render(){
     >
       {({ isSubmitting }) => (
         <Form className = 'formStyle'>
-           <Field className= 'formBox' type="email" name="username" placeholder="Username"/>
+          <Field className= 'formBox' type="username" name="username" placeholder="Username"/>
           <br/><br/>
-          <ErrorMessage name="email" component="div"/>
+          <ErrorMessage name="username" component="div"/>
           <br/>
           <Field className= 'formBox' type="email" name="email" placeholder="Email"/>
           <br/>
@@ -67,7 +68,7 @@ render(){
           <ErrorMessage name="name" component="div" />
           <br/>
           <br/>
-          <Field ClassName= 'age3' type="checkbox" name="hasAgreed" /><span className="TC">I agree to the <Link to='/TC'>Terms and Conditions</Link></span>
+          <Field className= 'age3' type="checkbox" name="hasAgreed" /><span className="TC">I agree to the <Link to='/TC'>Terms and Conditions</Link></span>
           <br/><br/>
           <button className ='buttonSubmit' type="submit" disabled={isSubmitting}><Link to='/profileSetup'><b> >> </b></Link>
             

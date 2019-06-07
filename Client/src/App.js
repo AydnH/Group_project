@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashRouter, Route } from "react-router-dom";
 
-import { MainHeader } from './components/navigation/MainHeader';
+
 import { HomePage } from './pages/Home/HomePage';
 import { RegisterPage } from './pages/Register/RegisterPage';
 import { ProfileSetupPage } from './pages/ProfileSetup/ProfileSetupPage';

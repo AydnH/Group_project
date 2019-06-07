@@ -6,10 +6,11 @@ export class FinalPage extends React.Component {
 constructor(props){
   super(props)
   this.state = {
-    _id:'',
+
     email: '',
     password:'',
     name:'',
+    username:'',
     hasAgreed:false
   }
 };
