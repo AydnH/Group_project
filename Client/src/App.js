@@ -25,17 +25,13 @@ function App() {
         <Route path="/SignUp"exact component={SignUpPage}/>
         <Route path="/register" component={RegisterPage} />
         <Route path="/ProfileSetup" component={ProfileSetupPage} />
-
         <Route path="/ProfileSetupPage" component={ProfileSetupPage} />
         <Route path="/Home" component={HomePage} />
-
         <Route path="/FinalPage" component={FinalPage} />
-        <Route path="/Payment" component={PaymentPage} />     
-		
-
+        <Route path="/Payment" component={PaymentPage} /> 
         <Route path="/Final" component={FinalPage} />
-       <Route path="/TC" component={TCPage} />
-              <Route path="/Location" component={LocationPage} />
+        <Route path="/TC" component={TCPage} />
+        <Route path="/Location" component={LocationPage} />
 
        
       </div>
