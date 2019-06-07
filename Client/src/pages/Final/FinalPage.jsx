@@ -71,9 +71,10 @@ const {data} = this.state;
 	
   <div className='image-container'> 
     <img style={{width:80, height: 80}} src={require('./images/logo.png')} alt='Logo'/>
-  </div>
-
-		<h1>Sign Up Complete!</h1>
+    </div>  
+      <br/> <br/><br/> <br/>
+<hr/>
+    <h1>SIGN UP COMPLETE</h1>
 		<hr/>
 		<p>Thank you for signing up for____</p>
 		

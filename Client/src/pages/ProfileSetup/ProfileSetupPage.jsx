@@ -20,7 +20,6 @@ export class ProfileSetupPage extends React.Component {
 <hr/>
     <h1>FINISH PROFILE</h1>
     <Formik
-
       initialValues={{ Age: '', Sex: '', Phone_number:'', Address:'', Relationship_status:'', Ethnicity:''}}
       validate={values => {
         let errors = {};
@@ -50,7 +49,7 @@ export class ProfileSetupPage extends React.Component {
       {({ isSubmitting }) => (
         <Form className= 'container'>
         <br/><br/>
-          <Field className= 'age2' type="Age" name="Age" placeholder="Age"/>
+          <Field className= 'age2' type="Age" name="Age" placeholder="Age*"/>
           <ErrorMessage name="Age" component="div"/>
           <br/><br/>
 
@@ -62,10 +61,10 @@ export class ProfileSetupPage extends React.Component {
           </select>          
           <ErrorMessage name="Sex" component="div" />
           <br/><br/>
-          <Field className= 'age2' type="Phone_number" name="Phone_number"placeholder="Please Enter Phone number" />
+          <Field className= 'age2' type="Phone_number" name="Phone_number"placeholder="Phone number*" />
           <ErrorMessage name="Phone_number" component="div" />
           <br/><br/>
-          <Field className= 'age2' type="Address" name="Address"placeholder="Please Enter Your address" />
+          <Field className= 'age2' type="Address" name="Address"placeholder="Address" />
           <ErrorMessage name="Address" component="div" />
           <br/><br/>
           <Field className= 'age2' type="Relationship_status" name="Relationship_status"placeholder="Relationship status" />

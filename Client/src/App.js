@@ -10,6 +10,7 @@ import { SignUpPage } from './pages/SignUp/signUpPage';
 
 import { FinalPage } from './pages/Final/FinalPage';
 import { TCPage } from './pages/Register/TC/TCPage';
+import { LocationPage } from './pages/Location/LocationPage';
 
 
 
@@ -34,12 +35,13 @@ function App() {
 
         <Route path="/Final" component={FinalPage} />
        <Route path="/TC" component={TCPage} />
+              <Route path="/Location" component={LocationPage} />
 
        
       </div>
       
 
-       <MainHeader />
+      
     </HashRouter>
   );
 }

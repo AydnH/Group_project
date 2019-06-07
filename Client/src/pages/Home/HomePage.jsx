@@ -21,7 +21,7 @@ export class HomePage extends React.Component {
 <br/>
 <br/>
 <p>Connection is a brand new social media app</p>
-Use Connection to:
+<p>Use Connection to:</p>
 <ul>
 <li>Connect and share with friends and family.</li>
 <li>Discover what's happening around the world.</li>
@@ -30,14 +30,6 @@ Use Connection to:
 
 <img style={{width:100, height:100}} src={require('./images/placeholder.png')} alt='HomePageImg'/>
 
-    <div className = 'buttonStyleHome'>
- <button className = 'test'> <img style={{width:5, height:5}} src={require('./images/next.png')} alt='Logo'/></button>
-</div>
-
-  
- <button className = 'buttonStyleHome2'>
-    >
-    </button> 
       </div>
 
     );

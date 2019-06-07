@@ -51,19 +51,23 @@ render(){
     >
       {({ isSubmitting }) => (
         <Form className = 'formStyle'>
-          <Field className= 'formBox' type="email" name="email" placeholder="Email"/>
+           <Field className= 'formBox' type="email" name="username" placeholder="Username"/>
           <br/><br/>
           <ErrorMessage name="email" component="div"/>
-          <br/><br/>
-          <Field className= 'formBox2'type="password" name="password" placeholder="password"/>
-          <br/><br/>
+          <br/>
+          <Field className= 'formBox' type="email" name="email" placeholder="Email"/>
+          <br/>
+          <ErrorMessage name="email" component="div"/>
+          <br/>
+          <Field className= 'formBox2'type="password" name="password" placeholder="Password"/>
+          <br/>
           <ErrorMessage name="password" component="div" />
-          <br/><br/>
-          <Field className= 'formBox3' type="name" name="name"placeholder="Please Enter Full Name" />
+          <br/>
+          <Field className= 'formBox3' type="name" name="name"placeholder="Full Name" />
           <ErrorMessage name="name" component="div" />
           <br/>
           <br/>
-          <Field type="checkbox" name="hasAgreed" /><span className="TC">I agree to the <Link to='/TC'>Terms and Conditions</Link></span>
+          <Field ClassName= 'age3' type="checkbox" name="hasAgreed" /><span className="TC">I agree to the <Link to='/TC'>Terms and Conditions</Link></span>
           <br/><br/>
           <button className ='buttonSubmit' type="submit" disabled={isSubmitting}><Link to='/profileSetup'><b> >> </b></Link>
             

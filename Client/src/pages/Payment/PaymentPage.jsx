@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 
 export class PaymentPage extends React.Component {
@@ -11,7 +13,7 @@ return (
 		</div>	
 			<br/> <br/><br/> <br/>
 <hr/>
-		<h1>PREMIUN ACCOUNT</h1>
+		<h1>PREMIUM ACCOUNT</h1>
 		<hr/>
 		<p>As a welcome gift we're giving you one month of <span className="green">FREE</span> premium membership!</p>
 		<hr/>
@@ -28,7 +30,8 @@ return (
 		</form>
 		<div className='form-control'>
 			<br/>
- <button className= 'continue'>Continue</button>
+ <button className= 'submitB' type="submit"><Link to='/Final'><b> >> </b></Link>
+          </button>
 			
 		</div>
 	</div>
