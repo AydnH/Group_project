@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field } from 'formik';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
@@ -20,9 +20,7 @@ export class PermissionPage extends React.Component {
 
       <Formik
         intialValues={{Location:false,Camera:false,Microphone:false, Contacts:false, CameraRoll:false, History:false,ThirdParty:false}}
-        validate={values =>{
-          let errors = {};
-        }}
+
         onSubmit={(values, {setSubmitting}) => {
           setTimeout(() => {
             console.log(JSON.stringify(values,null,2));

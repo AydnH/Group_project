@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field } from 'formik';
 
 
 export class PaymentPage extends React.Component {
@@ -23,10 +23,7 @@ return (
 		<hr/>
 		<p>Total <span className="green">$0</span></p>
 <Formik initialValues={{decline:false}}
-	validate={values => {
-		let errors ={};
 
-	}}
 	onSubmit={(values, {setSubmitting}) =>{
 		setTimeout(() => {
 			console.log(JSON.stringify(values.null,2));

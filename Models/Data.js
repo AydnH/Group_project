@@ -5,7 +5,6 @@ var DataSchema = new Schema({
 	Age:Number,
 	Sex:String,
 	Phone_number:Number,
-	Address:String,	
 	Relationship:String,	
 	Ethnicity:String,
 	Security: {

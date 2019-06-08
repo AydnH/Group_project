@@ -64,9 +64,6 @@ export class ProfileSetupPage extends React.Component {
           <Field className= 'age2' type="Phone_number" name="Phone_number"placeholder="Phone number*" />
           <ErrorMessage name="Phone_number" component="div" />
           <br/><br/>
-          <Field className= 'age2' type="Address" name="Address"placeholder="Address" />
-          <ErrorMessage name="Address" component="div" />
-          <br/><br/>
           <Field className= 'age2' type="Relationship_status" name="Relationship_status"placeholder="Relationship status" />
           <ErrorMessage name="Relationship_status" component="div" />
           <br/><br/>

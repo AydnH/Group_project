@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field } from 'formik';
 
 export class LocationPage extends React.Component {
   render() {
@@ -12,9 +12,7 @@ export class LocationPage extends React.Component {
 
       <Formik
         intialValues={{Street:'',Number:'',Apartment:'', Country:'', City:'', State:'',PostCode:''}}
-        validate={values =>{
-          let errors = {};
-        }}
+
         onSubmit={(values, {setSubmitting}) => {
           setTimeout(() => {
             console.log(JSON.stringify(values,null,2));
