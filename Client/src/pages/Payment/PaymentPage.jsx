@@ -43,13 +43,7 @@ return (
 			<Field className="age3" type="checkbox" name="decline"/><span className="light">I decline a repeat subscription</span>
 				<button className= 'submitB' type="submit"><Link to='/Final'><b> >> </b></Link></button>
 
-		</Form>
-			
-
-
-		
-	
-	
+		</Form>	
     )}
     </Formik>
     </div>  

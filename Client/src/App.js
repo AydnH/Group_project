@@ -7,6 +7,7 @@ import { RegisterPage } from './pages/Register/RegisterPage';
 import { ProfileSetupPage } from './pages/ProfileSetup/ProfileSetupPage';
 import { PaymentPage } from './pages/Payment/PaymentPage';
 import { SignUpPage } from './pages/SignUp/signUpPage';
+import { PermissionPage } from './pages/Permissions/PermissionPage';
 
 import { FinalPage } from './pages/Final/FinalPage';
 import { TCPage } from './pages/Register/TC/TCPage';
@@ -27,6 +28,7 @@ function App() {
         <Route path="/ProfileSetup" component={ProfileSetupPage} />
         <Route path="/ProfileSetupPage" component={ProfileSetupPage} />
         <Route path="/Home" component={HomePage} />
+        <Route path="/PermissionPage" component={PermissionPage} />
         <Route path="/FinalPage" component={FinalPage} />
         <Route path="/Payment" component={PaymentPage} /> 
         <Route path="/Final" component={FinalPage} />
