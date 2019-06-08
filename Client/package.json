@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://myapp.com/#/Home",
   "dependencies": {
     "node": "10.16.0",
     "npm":"6.9.0",

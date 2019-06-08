@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import axios from 'axios';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 
 export class PaymentPage extends React.Component {
@@ -21,21 +22,36 @@ return (
 		<p>Premium membership <span className="lineThrough">$50</span></p>
 		<hr/>
 		<p>Total <span className="green">$0</span></p>
+<Formik initialValues={{decline:false}}
+	validate={values => {
+		let errors ={};
 
-		<form>
-			<label>
-			<span className="light"><input type="checkbox" id="RepeatSubsciption"/> I decline a repeat subscription</span>
-			</label>
-			
-		</form>
-		<div className='form-control'>
-			<br/>
- <button className= 'submitB' type="submit"><Link to='/Final'><b> >> </b></Link>
-          </button>
-			
-		</div>
-	</div>
-    );
-  }
+	}}
+	onSubmit={(values, {setSubmitting}) =>{
+		setTimeout(() => {
+			console.log(JSON.stringify(values.null,2));
+			setSubmitting(false);
+		}, 400);
+	axios.post('http//localhost:3001/api/putData',{
+		decline:values.decline
+	});
+		}
+}
+>	
+	{({isSubmitting}) => (		
+		<Form className = 'formStyle'>
+			<Field className="age3" type="checkbox" name="decline"/><span className="light">I decline a repeat subscription</span>
+				<button className= 'submitB' type="submit"><Link to='/Final'><b> >> </b></Link></button>
 
+		</Form>
+			
+
+
+		
+	
+	
+    )}
+    </Formik>
+    </div>  
+)};
 }
