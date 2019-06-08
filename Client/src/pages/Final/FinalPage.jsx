@@ -114,7 +114,7 @@ return (
   		<hr/>
   		<p>Thank you for signing up for____</p>
   		
-  		<p>During the process of signing up we were able to ____</p>
+  		<p>You are the product of this app. Luckily will not be retaining or selling your information to advertisement companies. However other apps would not hesitate to do so. Everything in this app was legal, you consented to have your information collect and sold. Thank you for your co-operation.</p>
   <div className='UserData'><pre>{JSON.stringify(user, null, 2) }</pre></div>
   <div className='UserData'><pre>{JSON.stringify(data, null, 2) }</pre></div>
   <div className='UserData'><pre>{JSON.stringify(loco, null, 2) }</pre></div>
