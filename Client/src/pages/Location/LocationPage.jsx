@@ -48,7 +48,7 @@ export class LocationPage extends React.Component {
           <br/><br/>
           <Field className="formBox" type="PostCode" name="PostCode" placeholder="Post Code" />
           <br/>
-          <button className ="buttonSubmit" type="submit" disabled={isSubmitting}><b> >> </b> </button>
+           <button className= 'submitB' type="submit" disabled={isSubmitting}><Link to='/Payment'><b> >> </b></Link></button>
           </Form>          
         )}
 

@@ -74,7 +74,7 @@ export class ProfileSetupPage extends React.Component {
           <ErrorMessage name="Ethnicity" component="div" />
           <br/><br/>
           
-          <button className= 'submitB' type="submit" disabled={isSubmitting}><Link to='/Payment'><b> >> </b></Link>
+          <button className= 'submitB' type="submit" disabled={isSubmitting}><Link to='/PermissionPage'><b> >> </b></Link>
           </button>
         </Form>
       )}

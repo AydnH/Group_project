@@ -1,5 +1,6 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 export class PermissionPage extends React.Component {
@@ -56,7 +57,7 @@ export class PermissionPage extends React.Component {
                 <br/><br/>
               <span>Third Party app history<Field className= 'age3' type="checkbox" name="ThirdParty" /> </span>
                 <br/><br/>              
-          <button className ="buttonSubmit" type="submit" disabled={isSubmitting}><b> >> </b> </button>
+          <button className= 'submitB' type="submit" disabled={isSubmitting}><Link to='/Location'><b> >> </b></Link></button>
           </Form>          
         )}
 
