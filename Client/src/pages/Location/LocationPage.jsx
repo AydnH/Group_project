@@ -11,7 +11,7 @@ export class LocationPage extends React.Component {
       <h1>more forms</h1>
 
       <Formik
-        intialValues={{Address1:'',Address2:'',Address3:'', Country:'', City:'', State:'',PostCode:''}}
+        intialValues={{Street:'',Number:'',Apartment:'', Country:'', City:'', State:'',PostCode:''}}
         validate={values =>{
           let errors = {};
         }}
@@ -20,10 +20,10 @@ export class LocationPage extends React.Component {
             console.log(JSON.stringify(values,null,2));
             setSubmitting(false);
               }, 400);
-          axios.post('http://localhost:3001/api/putData',{
-            Address: values.Address,
-            Address2: values.Address2,
-            Address3: values.Address3,
+          axios.post('http://localhost:3001/api/put-Location',{
+            Street: values.Street,
+            Number: values.Number,
+            Apartment: values.Apartment,
             Country: values.Country,
             City: values.City,
             State: values.State,
@@ -34,11 +34,11 @@ export class LocationPage extends React.Component {
 
         {({ isSubmitting  }) => (
           <Form className= "formStyle">
-          <Field className="formBox" type="Address" name="Address" placeholder="Street" />
+          <Field className="formBox" type="text" name="Street" placeholder="Street" />
           <br/> <br/>
-          <Field className="formBox" type="Address2" name="Address2" placeholder="Building Number" />
+          <Field className="formBox" type="Number" name="Number" placeholder="Building Number" />
           <br/> <br/>
-          <Field className="formBox" type="Address3" name="Address3" placeholder="Apartment number" />
+          <Field className="formBox" type="Apartment" name="Apartment" placeholder="Apartment number" />
           <br/><br/>
           <Field className="formBox" type="Country" name="Country" placeholder="Country" />
           <br/><br/>

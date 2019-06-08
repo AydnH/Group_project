@@ -8,7 +8,6 @@ import { ProfileSetupPage } from './pages/ProfileSetup/ProfileSetupPage';
 import { PaymentPage } from './pages/Payment/PaymentPage';
 import { SignUpPage } from './pages/SignUp/signUpPage';
 import { PermissionPage } from './pages/Permissions/PermissionPage';
-
 import { FinalPage } from './pages/Final/FinalPage';
 import { TCPage } from './pages/Register/TC/TCPage';
 import { LocationPage } from './pages/Location/LocationPage';

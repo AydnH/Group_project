@@ -27,14 +27,15 @@ export class PermissionPage extends React.Component {
             console.log(JSON.stringify(values,null,2));
             setSubmitting(false);
               }, 400);
-          axios.post('http://localhost:3001/api/putData',{
-            Address: values.Address,
-            Address2: values.Address2,
-            Address3: values.Address3,
-            Country: values.Country,
-            City: values.City,
-            State: values.State,
-            PostCode: values.PostCode
+          axios.post('http://localhost:3001/api/put-Permissions',{
+            Location: values.Location,
+            Camera: values.Camera,
+            Microphone: values.Microphone,
+            Contacts: values.Contacts,
+            CameraRoll: values.CameraRoll,
+            History: values.History,
+            ThirdParty: values.ThirdParty
+
           });          
         }}
         >
