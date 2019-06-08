@@ -28,7 +28,7 @@ componentDidMount() {
         return this.setState({
           error: true,
           errorMessage: res.data.error.message,
-          loaded: true /** Use this to show the user that the page is loading somewhere */
+          loaded: true
         });
       }
 
@@ -40,51 +40,88 @@ componentDidMount() {
       });
        console.log(this.state.user);
     });
-    axios.get('http://localhost:3001/api/get-Data')
-    .then((res) => {
-      if (!res.data.success) {
-        return this.setState({
-          error: true,
-          errorMessage: res.data.error.message,
-          loaded: true
+
+        axios.get('http://localhost:3001/api/get-Data')
+        .then((res) => {
+          if (!res.data.success) {
+            return this.setState({
+              error: true,
+              errorMessage: res.data.error.message,
+              loaded: true
+            });
+          }
+          this.setState({
+            error: false,
+            loaded: true,
+            data: res.data.data
+          });
+          console.log(this.state.data);
         });
-      }
-      this.setState({
-        error: false,
-        loaded: true,
-        data: res.data.data
-      });
-      console.log(this.state.data);
-    });
+
+            axios.get('http://localhost:3001/api/get-Location')
+            .then((res) => {
+              if (!res.data.success) {
+                return this.setState({
+                  error: true,
+                  errorMessage: res.data.error.message,
+                  loaded: true
+                });
+              }
+              this.setState({
+                error: false,
+                loaded: true,
+                loco: res.data.loco
+              });
+              console.log(this.state.loco);
+            });
+
+                  axios.get('http://localhost:3001/api/get-Permissions')
+                  .then((res) => {
+                    if (!res.data.success) {
+                      return this.setState({
+                        error: true,
+                        errorMessage: res.data.error.message,
+                        loaded: true
+                      });
+                    }
+                    this.setState({
+                      error: false,
+                      loaded: true,
+                      perms: res.data.perms
+                    });
+                    console.log(this.state.data);
+                  });
 }
 
 
-  render() {
-const {user} = this.state;
-const {data} = this.state;
+render() {
+  const {user} = this.state;
+  const {data} = this.state;
+  const {loco} = this.state;
+  const {perms} = this.state;
+return (
 
 
-       return (
+  <div id='FinalPage'>
+
+  	
+    <div className='image-container'> 
+      <img style={{width:80, height: 80}} src={require('./images/logo.png')} alt='Logo'/>
+      </div>  
+        <br/> <br/><br/> <br/>
+  <hr/>
+      <h1>SIGN UP COMPLETE</h1>
+  		<hr/>
+  		<p>Thank you for signing up for____</p>
+  		
+  		<p>During the process of signing up we were able to ____</p>
+  <div className='UserData'><pre>{JSON.stringify(user, null, 2) }</pre></div>
+  <div className='UserData'><pre>{JSON.stringify(data, null, 2) }</pre></div>
+  <div className='UserData'><pre>{JSON.stringify(loco, null, 2) }</pre></div>
+  <div className='UserData'><pre>{JSON.stringify(perms, null, 2) }</pre></div>
 
 
-<div id='FinalPage'>
-
-	
-  <div className='image-container'> 
-    <img style={{width:80, height: 80}} src={require('./images/logo.png')} alt='Logo'/>
-    </div>  
-      <br/> <br/><br/> <br/>
-<hr/>
-    <h1>SIGN UP COMPLETE</h1>
-		<hr/>
-		<p>Thank you for signing up for____</p>
-		
-		<p>During the process of signing up we were able to ____</p>
-<div className='UserData'><pre>{JSON.stringify(user, null, 2) }</pre></div>
-<div className='UserData'><pre>{JSON.stringify(data, null, 2) }</pre></div>
-
-
-</div>
+  </div>
     
 
     );
