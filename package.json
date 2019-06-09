@@ -2,19 +2,20 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "homepage":"Home",
+  "homepage": "Home",
   "main": "server.js",
   "scripts": {
+    "install-all": "npm install --prefix ./server && npm install --prefix ./client",
+    "postinstall": "npm-run-all \"install-all\" \"build --prefix ./client\"",
     "server": "nodemon server.js",
     "client-install": "npm install --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "concurrently \"node server.js\" \"cd client && npm start\""
-},
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node": "10.16.0",
-    "npm": "6.9.0",
+    "all": "0.0.0",
     "body-parser": "^1.19.0",
     "cli": "^1.0.1",
     "concurrently": "^4.1.0",
@@ -22,6 +23,8 @@
     "express": "^4.17.1",
     "heroku": "^7.25.0",
     "mongoose": "^5.5.12",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "node": "10.16.0",
+    "npm": "6.9.0"
   }
 }
