@@ -29,11 +29,14 @@ app.use(bodyParser.json());
 app.use(logger('dev'));
 app.use(express.static(path.resolve('../client/build'), { index: false }));
 
-app.get('/*', (req, res, next) => {
-    res.sendFile('index.html', {
-      root: path.resolve('../client/build')
-    });
+if (process.env.NODE_ENV === 'production') {
+  // Serve any static files
+  app.use(express.static(path.join(__dirname, 'client/build')));
+// Handle React routing, return all requests to React app
+  app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
   });
+}
 
 
 router.get('/getData', (req, res) => {
