@@ -4,7 +4,7 @@
   "description": "",
   "homepage": "Home",
   "main": "server.js",
-  "scripts": {    
+  "scripts": {
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "server": "nodemon server.js",
     "client-install": "npm install --prefix client",
@@ -24,6 +24,7 @@
     "mongoose": "^5.5.12",
     "morgan": "^1.9.1",
     "node": "10.16.0",
-    "npm": "6.9.0"
+    "npm": "6.9.0",
+    "nvm": "0.0.4"
   }
 }
