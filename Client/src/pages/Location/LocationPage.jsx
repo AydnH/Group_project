@@ -41,19 +41,19 @@ export class LocationPage extends React.Component {
         {({ isSubmitting  }) => (
           <Form className= "formStyle">
           <Field className="formBox" type="text" name="Street" placeholder="Street" />
-          <br/> <br/>
+          <br/> <br/><br/> 
           <Field className="formBox" type="Number" name="Number" placeholder="Building Number" />
-          <br/> <br/>
+          <br/> <br/><br/> 
           <Field className="formBox" type="Apartment" name="Apartment" placeholder="Apartment number" />
-          <br/><br/>
+          <br/><br/><br/> 
           <Field className="formBox" type="Country" name="Country" placeholder="Country" />
-          <br/><br/>
+          <br/><br/><br/> 
           <Field className="formBox" type="City" name="City" placeholder="City" />
-          <br/><br/>
+          <br/><br/><br/> 
           <Field className="formBox" type="State" name="State" placeholder="State/region" />
-          <br/><br/>
+          <br/><br/><br/> 
           <Field className="formBox" type="PostCode" name="PostCode" placeholder="Post Code" />
-          <br/>
+          <br/><br/> 
            <button className= 'submitB' type="submit" disabled={isSubmitting}><Link to='/Payment'><b> >> </b></Link></button>
           </Form>          
         )}

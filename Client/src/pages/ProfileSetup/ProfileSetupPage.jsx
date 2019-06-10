@@ -48,10 +48,10 @@ export class ProfileSetupPage extends React.Component {
     >
       {({ isSubmitting }) => (
         <Form className= 'container'>
-        <br/><br/>
+       
           <Field className= 'age2' type="Age" name="Age" placeholder="Age*"/>
           <ErrorMessage name="Age" component="div"/>
-          <br/><br/>
+          <br/>
 
           <select className= 'age2' defaultValue= '' type="sex" name="Sex" placeholder="Sex?">
           	<option type= 'Sex' label='Sex' />
@@ -60,13 +60,13 @@ export class ProfileSetupPage extends React.Component {
           	<option type= 'other' label='other'/>
           </select>          
           <ErrorMessage name="Sex" component="div" />
-          <br/><br/>
+          <br/>
           <Field className= 'age2' type="Phone_number" name="Phone_number"placeholder="Phone number*" />
           <ErrorMessage name="Phone_number" component="div" />
-          <br/><br/>
+          <br/>
           <Field className= 'age2' type="Relationship_status" name="Relationship_status"placeholder="Relationship status" />
           <ErrorMessage name="Relationship_status" component="div" />
-          <br/><br/>
+          <br/>
           <Field className= 'age2' type="Ethnicity" name="Ethnicity"placeholder="Ethnicity" />
           <ErrorMessage name="Ethnicity" component="div" />
           <br/><br/>

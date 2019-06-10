@@ -112,9 +112,10 @@ return (
   <hr/>
       <h1>SIGN UP COMPLETE</h1>
   		<hr/>
-  		<p>Thank you for signing up for____</p>
+  		<p>Thank you for signing up to Connection!</p>
   		
-  		<p>You are the product of this app. Luckily will not be retaining or selling your information to advertisement companies. However other apps would not hesitate to do so. Everything in this app was legal, you consented to have your information collect and sold. Thank you for your co-operation.</p>
+  		<p>You are the product of this app. Everything in this app was legal, you consented to have your information collect and sold. Luckily will not be retaining or selling your information to advertisement companies. However, other apps would not hesitate to do so.</p>
+      <p>Below is all the information we collected through this quick sign up process.</p>
   <div className='UserData'><pre>{JSON.stringify(user, null, 2) }</pre></div>
   <div className='UserData'><pre>{JSON.stringify(data, null, 2) }</pre></div>
   <div className='UserData'><pre>{JSON.stringify(loco, null, 2) }</pre></div>

@@ -42,19 +42,19 @@ export class PermissionPage extends React.Component {
         {({ isSubmitting  }) => (
           <Form className= "formStyle">
              <span>Location<Field className= 'age3' type="checkbox" name="Location" defaultChecked/> </span>
-                <br/><br/>
+                <br/><br/><br/><br/>
               <span>Camera<Field className= 'age3' type="checkbox" name="Camera" defaultChecked/> </span>
-                <br/><br/>
+                <br/><br/><br/><br/>
               <span>CameraRoll<Field className= 'age3' type="checkbox" name="CameraRoll" defaultChecked/> </span>
-                <br/><br/>
+                <br/><br/><br/><br/>
               <span>Microphone<Field className= 'age3' type="checkbox" name="Microphone" defaultChecked/> </span>
-                <br/><br/>
+                <br/><br/><br/><br/>
               <span>Contacts<Field className= 'age3' type="checkbox" name="Contacts" defaultChecked/> </span>
-                <br/><br/>
+                <br/><br/><br/><br/>
               <span>Internet History<Field className= 'age3' type="checkbox" name="History" defaultChecked/>  </span>
-                <br/><br/>
+                <br/><br/><br/><br/>
               <span>Third Party app history<Field className= 'age3' type="checkbox" name="ThirdParty" defaultChecked/> </span>
-                <br/><br/> 
+                <br/><br/><br/><br/> 
                              
           <button className= 'submitB' type="submit" disabled={isSubmitting}><Link to='/Location'><b> >> </b></Link></button>
           </Form>          

@@ -32,14 +32,13 @@ export class SignUpPage extends React.Component {
 		<div className='image-container'>	
 		<img style={{width:80, height: 80}} src={require('./images/logo.png')} alt='Logo'/>
 		</div>	
-		
-		<br/>
-	    <br/>
-	    <br/>
-	    <br/>
-	    <hr/>
-	    <br/>
-	    <br/>
+		  <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <h1>CONNECTION</h1>
+<br/>
     
 			<button className= 'buttonStyle'><Link to='/Register'>SIGN UP</Link></button>
 
