@@ -6,31 +6,24 @@ export class HomePage extends React.Component {
     return (
       <div id='HomePage'>
       <br/>
-      <div className='header'>
- </div>
-		<div className='image-homepage'>	
-		<img style={{width:80, height:80}} src={require('./images/logoHomePage.png')} alt='Logo'/>
-		</div>	
+        <div className='image-container'> 
+    <img style={{width:80, height: 80}} src={require('./images/logo.png')} alt='Logo'/>
+    </div>  
     <br/>
-      <div className='header'>
-<hr/>
- <h1>CONNECTION</h1>
- </div>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <h1>CONNECTION</h1>
+    <hr/>
+
  <br/>
 
-
-<img style={{width:300, height:200}} src={require('./images/finalimg.png')} alt='HomePageImg'/>
-<br/>
-
-<div className= 'homePlacement'>
-
-<p>- Connect and share with family and friends</p>
-
-<p>- Discover whats happening near you</p>
-
-<p>- Make lasting relationships with new people</p>
+<div className= 'imageH'>
+<img style={{width:350, height:500}} src={require('./images/picls.png')} alt='HomePageImg'/>
 <br/>
 </div>
+
 
 <p><center><b> SIGN UP TODAY!</b></center></p>
 
