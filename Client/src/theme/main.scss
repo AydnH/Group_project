@@ -1,0 +1,355 @@
+body {
+  margin: 0;
+  padding: 0;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #5A5560;
+}
+
+div.page-container {
+  padding: 20px;
+}
+
+a
+{
+  color:white;
+  text-decoration: none;
+}
+
+ul li
+{
+    line-height: 0.8;
+    list-style: none;
+    color:white;
+}
+
+ul li::before {
+  color: #E9E585;  
+
+  content: "\2022"; 
+
+  position: relative;
+  padding-right:8px;
+  top: 8px;
+  font-size: 40px;
+}
+
+.accessList
+{
+    list-style: none;
+}
+
+h1
+{
+	text-align: center;
+	vertical-align: text-top;
+  font-family: 'Montserrat', sans-serif;
+  color: #E9E585;
+  font-size: 25px;
+}
+
+h2
+{
+  
+  colour: #E9E585;
+}
+
+img{
+ 
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.image-container{
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.buttonStyleAlert{
+  background-color: #9D8D8F;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  boarder-radius:15px;
+  border-radius:15px;
+  margin-right: 10px;
+  right: 0;
+  position: absolute;
+}
+
+
+.buttonStyle{
+  background-color: #E9E585;
+  color: white;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:25%;
+  boarder-radius:15px;
+  width:50%;
+  border-radius:20px;
+}
+
+.buttonStyle2{
+    background-color: #9D8D8F;
+  color: white;
+  border:none;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:25%;
+  boarder-radius:15px;
+  width:50%;
+  border-radius:20px;
+}
+
+.buttonStyle3{
+  background-color: #008CBA; /* Blue */
+  color: white;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:25%;
+  boarder-radius:15px;
+  width:50%;
+  border-radius:20px;
+}
+
+.buttonStyle4{
+   background-color: white;
+  color: red;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:25%;
+  boarder-radius:15px;
+  width:50%;
+  border-radius:20px;
+
+}
+
+.formStyle{
+ padding: 8px;
+  margin-top:20px;
+  border: none;
+  border-radius:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+  width:40%;
+  color: white;
+  border: none;
+  
+}
+
+.buttonSubmit{
+    background-color: #E9E585;
+  padding: 25px;
+  margin-top:20px;
+  border: none;
+  border-radius:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+  font-size: 12px;
+ 
+}
+
+.formBox {
+  
+  padding: 8px;
+  width:100%;
+  border: none;
+  border-radius:20px;
+
+}
+.formBox2 {
+  
+  padding: 8px;
+  margin-top:20px;
+  width:100%;
+  border: none;
+  border-radius:20px;
+}
+.formBox3 {
+  
+  padding: 8px;
+  margin-top:20px;
+  width:100%;
+  border: none;
+  border-radius:20px;
+}
+.age{
+   padding: 8px;
+  margin-top:20px;
+  border: none;
+  border-radius:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+}
+.age2{
+   padding: 8px;
+  margin-top:20px;
+  border: none;
+  border-radius:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+  width:40%;
+}
+.age3{
+  display: center;
+  align:center;   
+  display:block;
+  display: inline;
+  margin-left: auto;
+  margin-right:auto;
+float: right;
+  
+}
+.container{
+  
+}
+.submitB{
+  background-color: #E9E585;
+  padding: 25px;
+  margin-top:20px;
+  border: none;
+  border-radius:50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+  font-size: 12px;
+  
+}
+
+.continue{
+  background-color: #E9E585;
+   padding: 8px;
+  margin-top:20px;
+  border: none;
+  border-radius:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+p{
+  color: white;
+}
+
+
+
+@media (min-width: 1000px){
+
+  img{
+ 
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+}
+.homePlacement{
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+
+
+
+}
+body{
+}
+}
+@media (max-width: 500px){
+
+  img{
+ 
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+}
+body{
+  
+}
+.homePlacement{
+  background-colour:white;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+
+
+
+}
+}
+
+@import "./components/navigation/MainHeader.scss";
+@import "./components/forms/form-control.scss";
+
+@import "./pages/Home/HomePage.scss";
+@import "./pages/Registration/RegistrationPage.scss";
+@import "./pages/Payment/PaymentPage.scss";
+@import "./pages/Location/LocationPage.scss";
+@import "./pages/Final/FinalPage.scss";
+@import "./pages/ProfileSetup/ProfileSetupPage.scss";
+@import "./pages/Registration/TCPage.scss";

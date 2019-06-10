@@ -1,0 +1,176 @@
+#HomePage {
+  //background: yellow;
+}
+
+.image-homepage
+{
+
+display: right;
+ // align:center;   
+ // display:block; 
+  //margin-left: 70%;
+ // margin-right:auto;
+
+}
+.header{
+
+display: left;
+  //align:center;   
+  //display:block; 
+  //margin-left: auto;
+  //margin-right:80%;
+
+}
+
+.buttonStyleHome{
+ //background-color: #E9E585;
+ // border: none;
+  //color: white;
+  //padding: 20px;
+  //text-align: center;
+  //text-decoration: none;
+  //display: inline-block;
+  //font-size: 16px;
+  //margin: 4px 2px;
+  //border-radius:50%;
+  //margin-left:30px;
+}
+
+.buttonStyleHome2{
+ background-color:#E9E585;
+  border: none;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius:50%;
+  margin-left: 60%;
+}
+.test{
+	
+	 background-color: #E9E585;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius:50%;
+  margin-left:30px;
+}
+
+.homePlacement{
+  background-colour:#55495e;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+  width:20%;
+
+
+
+}
+
+
+@media (min-width: 1000px){
+
+  img{
+ 
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+}
+.homePlacement{
+  background-colour:red;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+
+
+
+}
+body{
+   
+}
+}
+@media (max-width: 500px){
+
+  img{
+ 
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+}
+body{
+    
+}
+.homePlacement{
+ 
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+  width:100%;
+
+
+
+}
+}
+@media (max-width: 450px){
+
+  
+body{
+    
+}
+.homePlacement{
+ 
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+  width:100%;
+
+
+
+}
+
+.imageH{ 
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+  width:100%;
+}
+}
