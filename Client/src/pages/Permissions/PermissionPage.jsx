@@ -16,7 +16,7 @@ export class PermissionPage extends React.Component {
           <br/>
           <hr/>
     <h1>ACCESS</h1>
-    <p>Allow Connection to access Device:</p>
+    <p><center><b>Allow Connection to access Device:</b></center></p>
 
       <Formik
         intialValues={{Location:false,Camera:false,Microphone:false, Contacts:false, CameraRoll:false, History:false,ThirdParty:false}}
@@ -41,20 +41,21 @@ export class PermissionPage extends React.Component {
 
         {({ isSubmitting  }) => (
           <Form className= "formStyle">
-             <span>Location<Field className= 'age3' type="checkbox" name="Location" /> </span>
+             <span>Location<Field className= 'age3' type="checkbox" name="Location" defaultChecked/> </span>
                 <br/><br/>
-              <span>Camera<Field className= 'age3' type="checkbox" name="Camera" /> </span>
+              <span>Camera<Field className= 'age3' type="checkbox" name="Camera" defaultChecked/> </span>
                 <br/><br/>
-              <span>CameraRoll<Field className= 'age3' type="checkbox" name="CameraRoll" /> </span>
+              <span>CameraRoll<Field className= 'age3' type="checkbox" name="CameraRoll" defaultChecked/> </span>
                 <br/><br/>
-              <span>Microphone<Field className= 'age3' type="checkbox" name="Microphone" /> </span>
+              <span>Microphone<Field className= 'age3' type="checkbox" name="Microphone" defaultChecked/> </span>
                 <br/><br/>
-              <span>Contacts<Field className= 'age3' type="checkbox" name="Contacts" /> </span>
+              <span>Contacts<Field className= 'age3' type="checkbox" name="Contacts" defaultChecked/> </span>
                 <br/><br/>
-              <span>Internet History<Field className= 'age3' type="checkbox" name="History" />  </span>
+              <span>Internet History<Field className= 'age3' type="checkbox" name="History" defaultChecked/>  </span>
                 <br/><br/>
-              <span>Third Party app history<Field className= 'age3' type="checkbox" name="ThirdParty" /> </span>
-                <br/><br/>              
+              <span>Third Party app history<Field className= 'age3' type="checkbox" name="ThirdParty" defaultChecked/> </span>
+                <br/><br/> 
+                             
           <button className= 'submitB' type="submit" disabled={isSubmitting}><Link to='/Location'><b> >> </b></Link></button>
           </Form>          
         )}
