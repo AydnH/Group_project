@@ -281,8 +281,20 @@ img{
 p{
   color: white;
 }
+
+
+
+@media (min-width: 1000px){
+
+  img{
+ 
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
+}
 .homePlacement{
-  background-colour:#55495e;
   font-size: 14px;
   display: flex;
   flex-direction: column;
@@ -294,9 +306,12 @@ p{
   margin-right:auto;
 
 
-}
 
-@media (max-width: 1000px){
+}
+body{
+}
+}
+@media (max-width: 500px){
 
   img{
  
@@ -306,7 +321,24 @@ p{
   margin-left: auto;
   margin-right:auto;
 }
+body{
+  
+}
+.homePlacement{
+  background-colour:white;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: center;
+  align:center;   
+  display:block; 
+  margin-left: auto;
+  margin-right:auto;
 
+
+
+}
 }
 
 @import "./components/navigation/MainHeader.scss";

@@ -8,7 +8,15 @@ export class LocationPage extends React.Component {
     return (
 
       <div className="LocationPage">
-      <h1>more forms</h1>
+        <div className='image-container'> 
+    <img style={{width:80, height: 80}} src={require('./images/logo.png')} alt='Logo'/>
+    </div>  
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+      <h1>LOCATION</h1>
 
       <Formik
         intialValues={{Street:'',Number:'',Apartment:'', Country:'', City:'', State:'',PostCode:''}}
