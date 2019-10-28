@@ -10,7 +10,7 @@ const Loco = require("./Models/Location");
 const Pay  = require("./Models/Pay");
 const path = require('path');
 
-const dbRoute = 'mongodb+srv://Aydn:F1s2t7r9aw10%21@database-tsy14.mongodb.net/test?retryWrites=true&w=majority';
+const dbRoute = '/test?retryWrites=true&w=majority';
 mongoose.connect(dbRoute, { useNewUrlParser: true });
 
 let db = mongoose.connection;
